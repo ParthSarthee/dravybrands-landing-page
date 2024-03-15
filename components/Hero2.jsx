@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
-export default function Hero() {
+export default function Hero2() {
 	const customScroll = () => {
 		document.getElementById("home_more").scrollIntoView({ behavior: "smooth" });
 	};
@@ -19,7 +19,7 @@ export default function Hero() {
 			</div>
 			<div className="flex sm:gap-8 gap-5">
 				<Link href="https://tally.so/r/nPpVbV">
-					<button className="sm:py-3 sm:px-8 py-2.5 px-6 rounded uppercase font-bold text-black bg-white hover:bg-rose-300 active:bg-rose-200">
+					<button className="sm:py-3 sm:px-8 py-2.5 px-6 rounded uppercase font-bold text-black bg-white hover:bg-creators active:bg-creators">
 						Apply Now
 					</button>
 				</Link>
@@ -47,7 +47,7 @@ function Slider() {
 	return (
 		<div className="slider-container text-left font-bold md:text-4xl text-2xl md:flex hidden">
 			<p className="slider-p">DravyBrands</p>
-			<section className="slider-animation slider-animation-1 text-rose-300">
+			<section className="slider-animation slider-animation-2 text-creators">
 				<div className="first">
 					<div>Consultancy.</div>
 				</div>
@@ -55,9 +55,6 @@ function Slider() {
 					<div>Founders Community.</div>
 				</div>
 				<div className="third">
-					<div>Students Community.</div>
-				</div>
-				<div className="fourth">
 					<div>Funding Opportunity.</div>
 				</div>
 			</section>

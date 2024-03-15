@@ -1,23 +1,51 @@
 "use client";
-import React from "react";
-import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export default function Footer() {
-	const router = useRouter();
+	const pathname = usePathname();
+
+	const [web, setWeb] = useState("db"); //db, dc and zero
+	const [logo, setLogo] = useState("/logoW.svg");
+	const [color, setColor] = useState("primary");
+
+	useEffect(() => {
+		if (pathname.includes("creators")) {
+			setWeb("dc");
+			setLogo("/dc.svg");
+			setColor("creators");
+		} else if (pathname.includes("zero-to-one")) {
+			setWeb("zero");
+		} else {
+			setWeb("db");
+			setLogo("/logoW.svg");
+			setColor("primary");
+		}
+	}, [pathname]);
 
 	return (
 		<>
-			<div className="flex flex-col justify-center items-center w-full h-[500px] bg-gradient-to-tl footer-gradient text-center gap-8">
+			<div
+				className={
+					"flex flex-col justify-center items-center w-full h-[500px] bg-gradient-to-tl text-center gap-8 footer-gradient-" +
+					color
+				}
+			>
 				<h1 className="md:text-6xl sm:text-5xl text-4xl font-bold">
 					Ready to get started?
 				</h1>
-				<p className="md:text-2xl text-rose-200">
+				<p className="md:text-2xl text-neutral-400">
 					Lets build another great brand!
 				</p>
 				<div>
 					<a href="https://tally.so/r/nPpVbV">
-						<button className="lg:text-lg font-bold uppercase rounded-full bg-rose-300 md:px-16 px-12 md:py-3 py-2.5 text-black">
+						<button
+							className={
+								"lg:text-lg font-bold uppercase rounded-full md:px-16 px-12 md:py-3 py-2.5 text-black bg-" +
+								color
+							}
+						>
 							Apply Now
 						</button>
 					</a>
@@ -27,7 +55,7 @@ export default function Footer() {
 			<div className="flex justify-evenly items-start md:flex-row gap-8 md:gap-0 flex-col bg-neutral-900 px-4 py-12 w-full text-gray-200">
 				<div className="flex flex-col w-32 md:w-40 mt-4">
 					<div>
-						<img src="/logoW.svg" alt="Logo" />
+						<img src={logo} alt="Logo" />
 					</div>
 					<div className="ml-1 mt-2">
 						<p>DravyBrands © {new Date().getFullYear()}</p>
@@ -36,9 +64,9 @@ export default function Footer() {
 
 				<div className="flex flex-col gap-4">
 					<h1 className="text-3xl text-neutral-500">Overview</h1>
-					<Link href="/">Home</Link>
-					<Link href="/zero-to-one">Zero To One</Link>
+					<Link href="/">Dravy Brands</Link>
 					<a href="https://tally.so/r/nPpVbV">Dravy Creators</a>
+					<Link href="/zero-to-one">Zero To One</Link>
 					<a href="">About Us</a>
 				</div>
 

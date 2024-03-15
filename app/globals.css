@@ -90,8 +90,12 @@ nav {
 	display: inline-block;
 }
 
-.slider-animation div:first-child {
+.slider-animation-1 div:first-child {
 	animation: text-animation 12s infinite;
+}
+
+.slider-animation-2 div:first-child {
+	animation: text-animation-2 8s infinite;
 }
 
 @keyframes text-animation {
@@ -128,6 +132,44 @@ nav {
 	}
 }
 
+@keyframes text-animation-2 {
+	0% {
+		margin-top: -0.25rem;
+	}
+
+	12.5% {
+		margin-top: -0.25rem;
+	}
+
+	25% {
+		margin-top: -6.5rem;
+	}
+
+	37.5% {
+		margin-top: -6.5rem;
+	}
+
+	50% {
+		margin-top: -13rem;
+	}
+
+	52.5% {
+		margin-top: -13rem;
+	}
+
+	75% {
+		margin-top: -6.25rem;
+	}
+
+	87.5% {
+		margin-top: -6.5rem;
+	}
+
+	100% {
+		margin-top: -0.25rem;
+	}
+}
+
 .section-1-gradient {
 	background: rgb(255, 155, 175);
 	background: radial-gradient(
@@ -146,11 +188,29 @@ nav {
 	);
 }
 
-.footer-gradient {
+.footer-gradient-primary {
 	background: rgb(255, 155, 175);
 	background: radial-gradient(
 		at 50%,
 		rgba(230, 54, 89, 0.12) 0%,
 		rgba(23, 23, 23, 1) 70% /* rgba(23, 23, 23, 1) 100% */
+	);
+}
+
+.footer-gradient-creators {
+	background: rgb(187, 155, 255);
+	background: radial-gradient(
+		at 50%,
+		rgba(136, 54, 230, 0.259) 0%,
+		rgba(23, 23, 23, 1) 70% /* rgba(23, 23, 23, 1) 100% */
+	);
+}
+
+.dc-section-1-gradient {
+	background: rgb(187, 155, 255);
+	background: radial-gradient(
+		at 20% 60%,
+		rgba(136, 54, 230, 0.259) 0%,
+		rgba(23, 23, 23, 1) 35% /* rgba(23, 23, 23, 1) 100% */
 	);
 }

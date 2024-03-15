@@ -12,6 +12,7 @@ module.exports = {
       },
       colors: {
         'primary': '#D06E7C',
+        'creators': '#BC9AFF',
         'school': '#4DE686',
         'school-light': '#9BFFC0',
       },

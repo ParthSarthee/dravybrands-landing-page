@@ -2,17 +2,17 @@
 "use client";
 import Marquee from "react-fast-marquee";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+import Hero2 from "@/components/Hero2";
 
 export default function Home() {
 	return (
 		<>
-			<Hero />
+			<Hero2 />
 			<Section1 />
-			<BrandSlider />
-			<Section2 />
+			{/* <BrandSlider /> */}
+			{/* <Section2 /> */}
 			<AboutUs />
-			<TestimonialSlider />
+			{/* <TestimonialSlider /> */}
 			<Footer />
 		</>
 
@@ -22,7 +22,7 @@ export default function Home() {
 
 function Section1() {
 	return (
-		<div className=" py-32 md:h-screen md:py-0 bg-neutral-900 text-neutral-100 flex flex-col justify-center items-center px-7 gap-20 md:gap-32 md:text-2xl md:font-light md:text-center section-1-gradient">
+		<div className=" py-32 md:h-screen md:py-0 bg-neutral-900 text-neutral-100 flex flex-col justify-center items-center px-7 gap-20 md:gap-32 md:text-2xl md:font-light md:text-center dc-section-1-gradient">
 			<div className="flex flex-col justify-center items-center md:gap-4 gap-2 w-full">
 				<h1 className="font-bold text-4xl w-full text-left md:text-center md:text-6xl">
 					Wealth Creation
@@ -31,21 +31,21 @@ function Section1() {
 			</div>
 			<div className="flex justify-evenly flex-col md:flex-row w-full gap-14">
 				<div className="flex flex-row md:flex-col items-center gap-4">
-					<i className="fa-regular fa-compass text-primary text-5xl md:text-6xl"></i>
+					<i className="fa-regular fa-compass text-creators text-5xl md:text-6xl"></i>
 
 					<p className="md:max-w-xs">
 						Enjoy lifetime benefit of referral based income
 					</p>
 				</div>
 				<div className="flex flex-row md:flex-col items-center gap-4">
-					<i className="fa-solid fa-sack-dollar text-primary text-5xl md:text-6xl"></i>
+					<i className="fa-solid fa-sack-dollar text-creators text-5xl md:text-6xl"></i>
 
 					<p className="md:max-w-xs">
 						Build a self growing income with self growing chain of added members
 					</p>
 				</div>
 				<div className="flex flex-row md:flex-col items-center gap-4">
-					<i className="fa-solid fa-hand-holding-dollar text-primary text-5xl md:text-6xl"></i>
+					<i className="fa-solid fa-hand-holding-dollar text-creators text-5xl md:text-6xl"></i>
 
 					<p className="md:max-w-xs">
 						Refer & get rewarded when your peer lands a job
@@ -71,18 +71,18 @@ function Section2() {
 			</div>
 			<div className="flex justify-evenly flex-col md:flex-row w-full gap-14">
 				<div className="flex flex-row md:flex-col items-center gap-4">
-					<i className="fa-solid fa-chart-simple text-primary text-5xl md:text-6xl"></i>
+					<i className="fa-solid fa-chart-simple text-creators text-5xl md:text-6xl"></i>
 					<p className="md:max-w-[250px] ml-[3px] md:ml-0">
 						Boost your professional credibility 10X
 					</p>
 				</div>
 				<div className="flex flex-row md:flex-col items-center gap-4">
-					<i className="fa-solid fa-users text-primary text-4xl md:text-6xl"></i>
+					<i className="fa-solid fa-users text-creators text-4xl md:text-6xl"></i>
 
 					<p className="md:max-w-[250px]">Elevate valuation by 500%</p>
 				</div>
 				<div className="flex flex-row md:flex-col items-center gap-4">
-					<i className="fa-solid fa-link text-primary text-4xl md:text-6xl"></i>
+					<i className="fa-solid fa-link text-creators text-4xl md:text-6xl"></i>
 
 					<p className="md:max-w-[250px]">Stand out to Senior Executives</p>
 				</div>
@@ -137,7 +137,7 @@ function TestimonialSlider() {
 			name="Gaurav Kwatra"
 			pfp="/founders/gaurav.jpeg"
 			role="CEO, Grafy"
-			key={2}
+			key={1}
 		/>,
 
 		<TestimonialCard
@@ -146,7 +146,7 @@ function TestimonialSlider() {
 			name="Shivam Arora"
 			pfp="/founders/shivam.jpg"
 			role="Director, S7 Fitness"
-			key={3}
+			key={1}
 		/>,
 
 		<TestimonialCard
@@ -155,7 +155,7 @@ function TestimonialSlider() {
 			name="Abhinav Sharma"
 			pfp="/founders/user.png"
 			role="CEO, Raged Media"
-			key={4}
+			key={1}
 		/>,
 	];
 
@@ -203,7 +203,7 @@ function AboutUs() {
 	return (
 		<div className="flex flex-col-reverse md:flex-row md:h-screen w-full md:gap-2 p-6">
 			<div className="flex flex-col md:flex-col-reverse w-full md:w-1/2 h-[50vh] md:h-full">
-				<div className="w-full h-1/2 bg-primary rounded-b-xl md:rounded-xl relative">
+				<div className="w-full h-1/2 bg-creators rounded-b-xl md:rounded-xl relative">
 					<img
 						className="absolute w-full p-4 md:p-0 md:top-[-50%] md:left-[16%] md:w-2/3"
 						src="/db_about.svg"
@@ -213,25 +213,28 @@ function AboutUs() {
 			</div>
 			<div className="flex flex-col gap-4 justify-evenly w-full p-8 text-neutral-900 md:w-1/2 bg-neutral-100 rounded-t-xl md:rounded-xl md:px-20">
 				<div className="md:text-6xl text-2xl font-bold">
-					<h1 className="text-primary">About</h1>
+					<h1 className="text-creators">About</h1>
 					<h1>The Program</h1>
 				</div>
 				<p className="md:text-xl font-light">
-					DravyBrands is the community for founders, where we're all about
-					making connections and having a blast!
+					Dravy Creators is dedicated to fostering a supportive and engaging
+					community where creators of all backgrounds and levels can thrive.
 					<br /> <br />
-					We organize top-notch events and parties exclusively for founders.
-					It's the perfect chance to meet fellow entrepreneurs, share stories,
-					and maybe even find your next big collaboration.
-					<br /> <br />
-					Our mission is simple: to create a supportive environment where
-					founders can thrive. Whether you're just starting out or have been in
-					the game for years, there's a place for you here.
-					<br /> <br />
-					At our events, you'll rub elbows with potential partners, investors,
-					and mentors who can help take your startup to the next level.
+					We welcome creators at every stage of their journey, from beginners to
+					seasoned professionals, fostering an inclusive environment where
+					diversity is celebrated.
+					<br />
+					<br />
+					Our platform serves as a dynamic networking hub, connecting creators
+					with like-minded individuals, industry experts, and potential
+					collaborators.
+					<br />
+					<br />
+					We provide a space for creators to share their ideas, projects, and
+					experiences, offering inspiration, feedback, and support to help them
+					achieve their goals.
 				</p>
-				<button className="bg-primary p-4 text-white text-lg rounded-xl md:max-w-[250px]">
+				<button className="bg-creators p-4 text-white text-lg rounded-xl md:max-w-[250px]">
 					Apply Now
 				</button>
 			</div>

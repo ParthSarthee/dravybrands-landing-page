@@ -1,5 +1,6 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -7,9 +8,26 @@ export default function Navbar() {
 
 	const toggleNav = () => setShowNav(!showNav);
 
+	useEffect(() => setShowNav(false), []);
+
+	const pathname = usePathname();
+	const [web, setWeb] = useState("db"); //db, dc and zero
+	const [logo, setLogo] = useState("/logoW.svg");
+	const [color, setColor] = useState("primary");
+
 	useEffect(() => {
-		setShowNav(false);
-	}, []); // Empty dependency array to run only on initial render
+		if (pathname.includes("zero-to-one")) {
+			setWeb("zero");
+		} else if (pathname.includes("creators")) {
+			setWeb("dc");
+			setLogo("/dc.svg");
+			setColor("creators");
+		} else {
+			setWeb("db");
+			setLogo("/logoW.svg");
+			setColor("primary");
+		}
+	}, [pathname]);
 
 	return (
 		<>
@@ -19,27 +37,43 @@ export default function Navbar() {
 					<div className="nav-container flex mx-auto max-w-6xl px-4 justify-between">
 						<div className="nav-logo md:mx-8">
 							<Link href="/">
-								<img className="h-16 p-3" src="/logoW.svg" alt="Main Logo" />
+								<img className="h-16 p-3" src={logo} alt="Main Logo" />
 							</Link>
 						</div>
 						<div className="nav-item-container md:flex items-center hidden">
-							<div className="nav-item">
-								<Link href="/zero-to-one">Zero to One</Link>
-							</div>
-							<div className="nav-item">
-								<Link href="/zero-to-one">Dravy Creators</Link>
-							</div>
-							<div className="nav-item">
-								<Link href="/school">Dravy School</Link>
-							</div>
+							{web != "db" && (
+								<div className="nav-item">
+									<Link href="/">Dravy Brands</Link>
+								</div>
+							)}
+							{web != "dc" && (
+								<div className="nav-item">
+									<Link href="/creators">Dravy Creators</Link>
+								</div>
+							)}
+							{web != "zero" && (
+								<div className="nav-item">
+									<Link href="/zero-to-one">Zero to One</Link>
+								</div>
+							)}
+							{web != "ds" && (
+								<div className="nav-item">
+									<Link href="/school">Dravy School</Link>
+								</div>
+							)}
 						</div>
-						<div className="nav-button invisible md:visible flex items-center justify-end">
+						<div className="nav-button invisible md:visible flex items-center justify-end bg-">
 							<a
 								href="https://tally.so/r/nPpVbV"
 								target="_blank"
 								rel="noreferrer"
 							>
-								<button className="md:text-sm w-34 text-xs py-2.5 px-6 rounded-full uppercase font-semibold hover:bg-rose-400 text-black active:bg-rose-200 bg-rose-300">
+								<button
+									className={
+										"md:text-sm w-34 text-xs py-2.5 px-6 rounded-full uppercase font-semibold text-black bg-" +
+										color
+									}
+								>
 									Apply Now
 								</button>
 							</a>
