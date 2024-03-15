@@ -93,8 +93,9 @@ function Section2() {
 
 function BrandSlider() {
 	const logos = [];
-	for (let i = 0; i < 12; i++) {
-		const imgSrc = "/brands/i" + i + ".svg";
+	for (let i = 0; i < 13; i++) {
+		let imgSrc = "/brands/i" + i + ".svg";
+		if (i == 12) imgSrc = "/brands/i12.png";
 		logos.push(<img src={imgSrc} className="max-w-28 mx-4" key={imgSrc} />);
 	}
 
@@ -155,6 +156,15 @@ function TestimonialSlider() {
 			pfp="/founders/user.png"
 			role="CEO, Raged Media"
 			key={4}
+		/>,
+
+		<TestimonialCard
+			body="Thank you Namit & Sahil sir for a wonderful partnership with DravyBrand and looking forward to more such partnerships in our future events."
+			brand="/brands/iitdelhi.png"
+			name="Sanidhya Garg"
+			pfp="/founders/user.png"
+			role="IIT Delhi"
+			key={5}
 		/>,
 	];
 

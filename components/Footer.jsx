@@ -33,7 +33,7 @@ export default function Footer() {
 		<>
 			<div
 				className={
-					"flex flex-col justify-center items-center w-full h-[500px] bg-gradient-to-tl text-center gap-8 footer-gradient-" +
+					"px-4 flex flex-col justify-center items-center w-full h-[500px] bg-gradient-to-tl text-center gap-8 footer-gradient-" +
 					color
 				}
 			>
@@ -57,7 +57,7 @@ export default function Footer() {
 				</div>
 			</div>
 
-			<div className="flex justify-evenly items-start md:flex-row gap-8 md:gap-0 flex-col bg-neutral-900 px-4 py-12 w-full text-gray-200">
+			<div className="flex justify-evenly items-start md:flex-row gap-8 md:gap-0 flex-col bg-neutral-900 px-8 py-12 w-full text-gray-200">
 				<div className="flex flex-col w-32 md:w-40 mt-4">
 					<div>
 						<img src={logo} alt="Logo" />
