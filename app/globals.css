@@ -1,33 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	@apply font-sans bg-neutral-900 text-neutral-100;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Navbar CSS */
+nav {
+	@apply w-full sticky top-0 z-20;
+	height: 68px;
+	background-image: linear-gradient(
+		to right,
+		#3f5efb,
+		#fc466b,
+		#3f5efb,
+		#fc466b
+	);
+}
+
+.nav-item {
+	@apply text-base mx-4 last:mr-0 first:ml-0 font-semibold;
+}
+
+.mobile-nav-item {
+	@apply mx-4 p-4 w-full text-center text-2xl;
+}
+
+/* GRADIENT TEXT ANIMATION */
+.gradient-animation {
+	background: linear-gradient(
+		135deg,
+		#3f5efb,
+		#fc466b,
+		#f59e0b,
+		#3f5efb,
+		#fc466b,
+		#f59e0b,
+		#3f5efb
+	);
+	background-size: 300%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 7s ease-in-out infinite;
+	-moz-animation: animated_text 7s ease-in-out infinite;
+	-webkit-animation: animated_text 7s ease-in-out infinite;
+}
+
+@keyframes animated_text {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 50% 50%;
+	}
+
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+.hero-div div {
+	@apply p-2;
+}
+
+/* SLIDER ANIMATIONS */
+.slider-p {
+	text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+		0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.slider-container {
+	color: #e5e5e5;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider-animation {
+	height: 50px;
+	overflow: hidden;
+}
+
+.slider-animation > div > div {
+	padding: 0.25rem 0.75rem;
+	height: 2.81rem;
+	margin-bottom: 2.81rem;
+	display: inline-block;
+}
+
+.slider-animation div:first-child {
+	animation: text-animation 12s infinite;
+}
+
+@keyframes text-animation {
+	0% {
+		margin-top: -0.25rem;
+	}
+
+	14% {
+		margin-top: -6.5rem;
+	}
+
+	28% {
+		margin-top: -13rem;
+	}
+
+	42% {
+		margin-top: -19.5rem;
+	}
+
+	56% {
+		margin-top: -19.5rem;
+	}
+
+	70% {
+		margin-top: -13rem;
+	}
+
+	84% {
+		margin-top: -6.5rem;
+	}
+
+	100% {
+		margin-top: -0.25rem;
+	}
+}
+
+.section-1-gradient {
+	background: rgb(255, 155, 175);
+	background: radial-gradient(
+		at 20% 60%,
+		rgba(230, 54, 89, 0.1) 0%,
+		rgba(23, 23, 23, 1) 35% /* rgba(23, 23, 23, 1) 100% */
+	);
+}
+
+.section-2-gradient {
+	background: rgb(255, 155, 175);
+	background: radial-gradient(
+		at 80% 60%,
+		rgba(230, 54, 89, 0.1) 0%,
+		rgba(23, 23, 23, 1) 35% /* rgba(23, 23, 23, 1) 100% */
+	);
+}
+
+.footer-gradient {
+	background: rgb(255, 155, 175);
+	background: radial-gradient(
+		at 50%,
+		rgba(230, 54, 89, 0.12) 0%,
+		rgba(23, 23, 23, 1) 70% /* rgba(23, 23, 23, 1) 100% */
+	);
 }
