@@ -212,17 +212,18 @@ function AboutUs() {
 	return (
 		<div
 			id="about"
-			className="flex flex-col-reverse md:flex-row md:h-screen w-full md:gap-2 p-6"
+			className="flex flex-col-reverse md:flex-row md:min-h-screen w-full md:gap-2 p-6 justify-evenly"
 		>
-			<div className="flex flex-col md:flex-col-reverse w-full md:w-1/2 h-[50vh] md:h-full">
-				<div className="w-full h-1/2 bg-primary rounded-b-xl md:rounded-xl relative">
+			<div className="flex flex-col md:flex-col-reverse w-full md:w-1/2 md:h-auto h-[50vh]">
+				<div className="w-full bg-primary rounded-b-xl md:rounded-xl relative md:h-1/2 h-1/2">
 					<img
 						className="absolute w-full p-4 md:p-0 md:top-[-50%] md:left-[16%] md:w-2/3"
 						src="/db_about.svg"
 					/>
 				</div>
-				<div className="w-full h-1/2 hidden md:flex"></div>
+				<div className="w-full hidden md:flex md:h-1/2"></div>
 			</div>
+
 			<div className="flex flex-col gap-4 justify-evenly w-full p-8 text-neutral-900 md:w-1/2 bg-neutral-100 rounded-t-xl md:rounded-xl md:px-20">
 				<div className="md:text-6xl text-2xl font-bold">
 					<h1 className="text-primary">About</h1>
