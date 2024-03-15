@@ -8,7 +8,7 @@ export default function Home() {
 	return (
 		<>
 			<Hero />
-			<Section1 />
+			{/* <Section1 /> */}
 			<BrandSlider />
 			<Section2 />
 			<AboutUs />
@@ -106,7 +106,6 @@ function BrandSlider() {
 			<Marquee speed={200} className="text-white py-8">
 				{logos}
 			</Marquee>
-			;
 		</div>
 	);
 }
@@ -201,7 +200,10 @@ function TestimonialCard({ pfp, brand, body, name, role, size = "w-10 h-10" }) {
 
 function AboutUs() {
 	return (
-		<div className="flex flex-col-reverse md:flex-row md:h-screen w-full md:gap-2 p-6">
+		<div
+			id="about"
+			className="flex flex-col-reverse md:flex-row md:h-screen w-full md:gap-2 p-6"
+		>
 			<div className="flex flex-col md:flex-col-reverse w-full md:w-1/2 h-[50vh] md:h-full">
 				<div className="w-full h-1/2 bg-primary rounded-b-xl md:rounded-xl relative">
 					<img
@@ -214,7 +216,7 @@ function AboutUs() {
 			<div className="flex flex-col gap-4 justify-evenly w-full p-8 text-neutral-900 md:w-1/2 bg-neutral-100 rounded-t-xl md:rounded-xl md:px-20">
 				<div className="md:text-6xl text-2xl font-bold">
 					<h1 className="text-primary">About</h1>
-					<h1>The Program</h1>
+					<h1>Dravy Brands</h1>
 				</div>
 				<p className="md:text-xl font-light">
 					DravyBrands is the community for founders, where we're all about
@@ -231,9 +233,12 @@ function AboutUs() {
 					At our events, you'll rub elbows with potential partners, investors,
 					and mentors who can help take your startup to the next level.
 				</p>
-				<button className="bg-primary p-4 text-white text-lg rounded-xl md:max-w-[250px]">
+				<a
+					href="https://nas.io/db-founders-community"
+					className="bg-primary text-center p-4 text-white text-lg rounded-xl md:max-w-[250px]"
+				>
 					Apply Now
-				</button>
+				</a>
 			</div>
 		</div>
 	);

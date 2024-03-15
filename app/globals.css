@@ -84,7 +84,7 @@ nav {
 }
 
 .slider-animation > div > div {
-	padding: 0.25rem 0.75rem;
+	padding: 0.25rem 0rem;
 	height: 2.81rem;
 	margin-bottom: 2.81rem;
 	display: inline-block;

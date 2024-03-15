@@ -9,14 +9,9 @@ export default function Home() {
 		<>
 			<Hero2 />
 			<Section1 />
-			{/* <BrandSlider /> */}
-			{/* <Section2 /> */}
 			<AboutUs />
-			{/* <TestimonialSlider /> */}
 			<Footer />
 		</>
-
-		// <div className="">Home</div>
 	);
 }
 
@@ -56,152 +51,12 @@ function Section1() {
 	);
 }
 
-function Section2() {
-	return (
-		<div className=" h-screen bg-neutral-900 text-neutral-100 flex flex-col justify-center items-center px-7 gap-20 md:gap-32 md:text-2xl md:font-light md:text-center section-2-gradient">
-			<div className="flex flex-col justify-center items-center md:gap-4 gap-2">
-				<h1 className="font-bold text-4xl w-full text-left md:text-center md:text-6xl">
-					A community specifically <br />{" "}
-					<span className="gradient-animation">designed for founders</span>
-				</h1>
-				<p className="md:max-w-2xl">
-					An environment that showcases your expertise and builds your
-					credibility among top founders.
-				</p>
-			</div>
-			<div className="flex justify-evenly flex-col md:flex-row w-full gap-14">
-				<div className="flex flex-row md:flex-col items-center gap-4">
-					<i className="fa-solid fa-chart-simple text-creators text-5xl md:text-6xl"></i>
-					<p className="md:max-w-[250px] ml-[3px] md:ml-0">
-						Boost your professional credibility 10X
-					</p>
-				</div>
-				<div className="flex flex-row md:flex-col items-center gap-4">
-					<i className="fa-solid fa-users text-creators text-4xl md:text-6xl"></i>
-
-					<p className="md:max-w-[250px]">Elevate valuation by 500%</p>
-				</div>
-				<div className="flex flex-row md:flex-col items-center gap-4">
-					<i className="fa-solid fa-link text-creators text-4xl md:text-6xl"></i>
-
-					<p className="md:max-w-[250px]">Stand out to Senior Executives</p>
-				</div>
-			</div>
-		</div>
-	);
-}
-
-function BrandSlider() {
-	const logos = [];
-	for (let i = 0; i < 12; i++) {
-		const imgSrc = "/brands/i" + i + ".svg";
-		logos.push(<img src={imgSrc} className="max-w-28 mx-4" key={imgSrc} />);
-	}
-
-	return (
-		<div>
-			<h1 className="md:text-3xl text-lg text-center p-8">
-				Founders from the Top 100+ Companies trust DravyBrands for their growth.
-			</h1>
-			<Marquee speed={200} className="text-white py-8">
-				{logos}
-			</Marquee>
-			;
-		</div>
-	);
-}
-
-function TestimonialSlider() {
-	const Reviews = [
-		<TestimonialCard
-			body="It has been a great partnership of growth and experience with a team of very professional and talented people from DravyBrands."
-			brand="/brands/alogo.png"
-			name="Parth Sarthee"
-			pfp="/founders/parth.jpg"
-			role="CEO, Aroxbit"
-			key={0}
-		/>,
-
-		<TestimonialCard
-			body="Thank you DravyBrands! You people are brilliantly helping our startup ACD in its growth by improving its business model & always being their guiding us through our problems."
-			brand="/brands/acd.png"
-			name="Ayush Ghildiyal"
-			pfp="/founders/ayush.jpg"
-			role="Founder, ACD"
-			key={1}
-		/>,
-
-		<TestimonialCard
-			body="I would highly recommend Dravybrands to any business looking to grow their brand. Their expertise & dedication make them an invaluable partner."
-			brand="/brands/grafy.svg"
-			name="Gaurav Kwatra"
-			pfp="/founders/gaurav.jpeg"
-			role="CEO, Grafy"
-			key={1}
-		/>,
-
-		<TestimonialCard
-			body="its been great working with dravybrands. Their team of experts in branding, marketing, and technology work closely with my company to reach its full potential."
-			brand="/brands/s7.svg"
-			name="Shivam Arora"
-			pfp="/founders/shivam.jpg"
-			role="Director, S7 Fitness"
-			key={1}
-		/>,
-
-		<TestimonialCard
-			body="From the moment we started working with DravyBrands, their expertise and dedication to our success were evident."
-			brand="/brands/raged.svg"
-			name="Abhinav Sharma"
-			pfp="/founders/user.png"
-			role="CEO, Raged Media"
-			key={1}
-		/>,
-	];
-
-	return (
-		<div className="mt-32">
-			<h1 className="md:text-4xl font-bold text-2xl text-center px-8">
-				What our community has to say
-			</h1>
-			<Marquee className="text-white py-20">{Reviews}</Marquee>
-		</div>
-	);
-}
-
-function TestimonialCard({ pfp, brand, body, name, role, size = "w-10 h-10" }) {
-	return (
-		<div className="flex flex-col justify-between bg-neutral-800 w-72 h-64 rounded-xl shadow-xl px-4 py-2 flex-grow sm:flex-grow-0 mx-8">
-			<div>
-				<i className="fa-solid fa-quote-left text-4xl text-gray-200"></i>
-				{/* <p className="unique-para" dangerouslySetInnerHTML={{ __html: body }} /> */}
-				<p>{body}</p>
-			</div>
-			<div className="flex flex-col w-full gap-3 py-3">
-				<div>
-					<hr className="border border-solid border-gray-200 w-full" />
-				</div>
-				<div className="flex flex-row justify-between items-center">
-					<div className="w-10 h-10">
-						<img className="rounded-full" src={pfp} alt={name} />
-					</div>
-					<div className="text-sm font-medium">
-						<h1>
-							{name} <br /> {role}
-						</h1>
-					</div>
-					<div className="flex justify-center items-center">
-						<img src={brand} alt="Brand Logo" className={size} />
-					</div>
-				</div>
-			</div>
-		</div>
-	);
-}
-
 function AboutUs() {
 	return (
-		<div className="flex flex-col-reverse md:flex-row md:h-screen w-full md:gap-2 p-6">
+		<div
+			id="about"
+			className="flex flex-col-reverse md:flex-row md:h-screen w-full md:gap-2 p-6"
+		>
 			<div className="flex flex-col md:flex-col-reverse w-full md:w-1/2 h-[50vh] md:h-full">
 				<div className="w-full h-1/2 bg-creators rounded-b-xl md:rounded-xl relative">
 					<img
@@ -214,7 +69,7 @@ function AboutUs() {
 			<div className="flex flex-col gap-4 justify-evenly w-full p-8 text-neutral-900 md:w-1/2 bg-neutral-100 rounded-t-xl md:rounded-xl md:px-20">
 				<div className="md:text-6xl text-2xl font-bold">
 					<h1 className="text-creators">About</h1>
-					<h1>The Program</h1>
+					<h1>Dravy Creators</h1>
 				</div>
 				<p className="md:text-xl font-light">
 					Dravy Creators is dedicated to fostering a supportive and engaging
@@ -234,9 +89,12 @@ function AboutUs() {
 					experiences, offering inspiration, feedback, and support to help them
 					achieve their goals.
 				</p>
-				<button className="bg-creators p-4 text-white text-lg rounded-xl md:max-w-[250px]">
+				<a
+					href="https://dravycreators.dravybrands.com/"
+					className="bg-creators p-4 text-center text-white text-lg rounded-xl md:max-w-[250px]"
+				>
 					Apply Now
-				</button>
+				</a>
 			</div>
 		</div>
 	);

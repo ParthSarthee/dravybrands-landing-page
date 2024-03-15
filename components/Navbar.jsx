@@ -14,18 +14,23 @@ export default function Navbar() {
 	const [web, setWeb] = useState("db"); //db, dc and zero
 	const [logo, setLogo] = useState("/logoW.svg");
 	const [color, setColor] = useState("primary");
+	const [link, setLink] = useState("https://nas.io/db-founders-community");
 
 	useEffect(() => {
 		if (pathname.includes("zero-to-one")) {
 			setWeb("zero");
+		} else if (pathname.includes("school")) {
+			setWeb("ds");
 		} else if (pathname.includes("creators")) {
 			setWeb("dc");
 			setLogo("/dc.svg");
 			setColor("creators");
+			setLink("https://dravycreators.dravybrands.com/");
 		} else {
 			setWeb("db");
 			setLogo("/logoW.svg");
 			setColor("primary");
+			setLink("https://nas.io/db-founders-community");
 		}
 	}, [pathname]);
 
@@ -63,11 +68,7 @@ export default function Navbar() {
 							)}
 						</div>
 						<div className="nav-button invisible md:visible flex items-center justify-end bg-">
-							<a
-								href="https://tally.so/r/nPpVbV"
-								target="_blank"
-								rel="noreferrer"
-							>
+							<a href={link} target="_blank" rel="noreferrer">
 								<button
 									className={
 										"md:text-sm w-34 text-xs py-2.5 px-6 rounded-full uppercase font-semibold text-black bg-" +
@@ -96,11 +97,17 @@ export default function Navbar() {
 					</div>
 				</div>
 				<div className="nav-item-container flex flex-col items-center justify-center h-screen">
-					<a href="https://tally.so/r/nPpVbV" target="_blank" rel="noreferrer">
+					<a href={link} target="_blank" rel="noreferrer">
 						<button className="py-2.5 px-6 rounded-full uppercase font-semibold text-black hover:bg-rose-300 hover:text-black active:bg-rose-200 bg-white mb-3.5">
 							Apply Now
 						</button>
 					</a>
+					<div className="mobile-nav-item">
+						<Link href="/">Dravy Brands</Link>
+					</div>
+					<div className="mobile-nav-item">
+						<Link href="/creators">Dravy Creators</Link>
+					</div>
 					<div className="mobile-nav-item">
 						<Link href="/zero-to-one">Zero to One</Link>
 					</div>

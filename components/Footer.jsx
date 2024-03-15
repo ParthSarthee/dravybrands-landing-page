@@ -9,18 +9,23 @@ export default function Footer() {
 	const [web, setWeb] = useState("db"); //db, dc and zero
 	const [logo, setLogo] = useState("/logoW.svg");
 	const [color, setColor] = useState("primary");
+	const [link, setLink] = useState("https://nas.io/db-founders-community");
 
 	useEffect(() => {
-		if (pathname.includes("creators")) {
+		if (pathname.includes("zero-to-one")) {
+			setWeb("zero");
+		} else if (pathname.includes("school")) {
+			setWeb("ds");
+		} else if (pathname.includes("creators")) {
 			setWeb("dc");
 			setLogo("/dc.svg");
 			setColor("creators");
-		} else if (pathname.includes("zero-to-one")) {
-			setWeb("zero");
+			setLink("https://dravycreators.dravybrands.com/");
 		} else {
 			setWeb("db");
 			setLogo("/logoW.svg");
 			setColor("primary");
+			setLink("https://nas.io/db-founders-community");
 		}
 	}, [pathname]);
 
@@ -39,7 +44,7 @@ export default function Footer() {
 					Lets build another great brand!
 				</p>
 				<div>
-					<a href="https://tally.so/r/nPpVbV">
+					<a href={link}>
 						<button
 							className={
 								"lg:text-lg font-bold uppercase rounded-full md:px-16 px-12 md:py-3 py-2.5 text-black bg-" +
@@ -65,9 +70,9 @@ export default function Footer() {
 				<div className="flex flex-col gap-4">
 					<h1 className="text-3xl text-neutral-500">Overview</h1>
 					<Link href="/">Dravy Brands</Link>
-					<a href="https://tally.so/r/nPpVbV">Dravy Creators</a>
+					<Link href="/creators">Dravy Creators</Link>
 					<Link href="/zero-to-one">Zero To One</Link>
-					<a href="">About Us</a>
+					<Link href="/school">Dravy School</Link>
 				</div>
 
 				<div className="flex flex-col gap-4">
