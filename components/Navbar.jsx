@@ -17,6 +17,7 @@ export default function Navbar() {
 	const [link, setLink] = useState("https://nas.io/db-founders-community");
 
 	useEffect(() => {
+		setShowNav(false);
 		if (pathname.includes("zero-to-one")) {
 			setWeb("zero");
 		} else if (pathname.includes("school")) {
