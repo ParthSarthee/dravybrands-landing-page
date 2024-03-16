@@ -57,9 +57,12 @@ export default function Footer() {
 				</div>
 			</div>
 
-			<p className={"w-full text-center md:text-xl text-" + color}>
-				Recognised By The Startup India
-			</p>
+			<div className="flex flex-col items-center p-2">
+				<p className="w-full text-center md:text-2xl text-primary">
+					Officially Recognised By The Startup India
+				</p>
+				<img src="/startup.png" className="max-w-[300px] " />
+			</div>
 
 			<div className="flex justify-evenly items-start md:flex-row gap-8 md:gap-0 flex-col bg-neutral-900 px-8 py-12 w-full text-gray-200">
 				<div className="flex flex-col w-32 md:w-40 mt-4">
@@ -74,9 +77,9 @@ export default function Footer() {
 				<div className="flex flex-col gap-4">
 					<h1 className="text-3xl text-neutral-500">Overview</h1>
 					<Link href="/">Dravy Brands</Link>
-					<Link href="/creators">Dravy Creators</Link>
-					<Link href="/zero-to-one">Zero To One</Link>
-					<Link href="/school">Dravy School</Link>
+					<Link href="/creators.html">Dravy Creators</Link>
+					<Link href="/zero-to-one.html">Zero To One</Link>
+					<Link href="/school.html">Dravy School</Link>
 				</div>
 
 				<div className="flex flex-col gap-4">

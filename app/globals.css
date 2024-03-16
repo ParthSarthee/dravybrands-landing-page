@@ -206,11 +206,33 @@ nav {
 	);
 }
 
+@media (max-width: 766px) {
+	.hero-gradient {
+		background: rgb(255, 155, 175);
+		background: radial-gradient(
+			500px 250px at 50% 11%,
+			rgba(230, 54, 89, 0.12) 0%,
+			rgba(23, 23, 23, 1) 30% /* rgba(23, 23, 23, 1) 100% */
+		);
+	}
+}
+
+@media (min-width: 767px) {
+	.hero-gradient {
+		background: rgb(187, 155, 255);
+		background: radial-gradient(
+			500px 250px at 50% 18%,
+			rgba(230, 54, 89, 0.1) 0%,
+			rgba(23, 23, 23, 1) 50% /* rgba(23, 23, 23, 1) 100% */
+		);
+	}
+}
+
 .dc-section-1-gradient {
 	background: rgb(187, 155, 255);
 	background: radial-gradient(
 		at 20% 60%,
-		rgba(136, 54, 230, 0.259) 0%,
+		rgba(136, 54, 230, 0.12) 0%,
 		rgba(23, 23, 23, 1) 35% /* rgba(23, 23, 23, 1) 100% */
 	);
 }

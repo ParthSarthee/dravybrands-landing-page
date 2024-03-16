@@ -7,7 +7,7 @@ export default function Hero() {
 	};
 
 	return (
-		<div className="hero-div flex flex-col text-center items-center justify-center relative text-gray-200 gap-6 py-20 md:h-screen md:py-0 bg-neutral-900">
+		<div className="hero-div flex flex-col text-center items-center justify-center relative text-gray-200 gap-6 py-20 md:h-screen md:py-0 ">
 			<div>
 				<p className="gradient-animation md:text-9xl font-extrabold text-7xl px-6 md:px-0">
 					Your <br /> Growth <br /> Partner

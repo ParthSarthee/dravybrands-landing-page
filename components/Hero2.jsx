@@ -7,7 +7,7 @@ export default function Hero2() {
 	};
 
 	return (
-		<div className="hero-div flex flex-col text-center items-center justify-center relative text-gray-200 gap-6 pt-32 pb-16 md:pb-0 md:pt-16 bg-neutral-900">
+		<div className="hero-div hero2-b-gradient flex flex-col text-center items-center justify-center relative text-gray-200 gap-6 pt-32 pb-16 md:pb-0 md:pt-16 ">
 			<div>
 				<p className="gradient-animation md:text-8xl font-extrabold text-5xl px-6 md:px-0">
 					Nurture <br /> Creativity, <br /> And Build <br /> Connections

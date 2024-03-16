@@ -6,7 +6,7 @@ import Hero from "@/components/Hero";
 
 export default function Home() {
 	return (
-		<>
+		<div className="hero-gradient">
 			<Hero />
 			{/* <Section1 /> */}
 			<BrandSlider />
@@ -14,7 +14,7 @@ export default function Home() {
 			<AboutUs />
 			<TestimonialSlider />
 			<Footer />
-		</>
+		</div>
 
 		// <div className="">Home</div>
 	);

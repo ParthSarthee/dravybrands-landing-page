@@ -54,17 +54,17 @@ export default function Navbar() {
 							)}
 							{web != "dc" && (
 								<div className="nav-item">
-									<Link href="/creators">Dravy Creators</Link>
+									<Link href="/creators.html">Dravy Creators</Link>
 								</div>
 							)}
 							{web != "zero" && (
 								<div className="nav-item">
-									<Link href="/zero-to-one">Zero to One</Link>
+									<Link href="/zero-to-one.html">Zero to One</Link>
 								</div>
 							)}
 							{web != "ds" && (
 								<div className="nav-item">
-									<Link href="/school">Dravy School</Link>
+									<Link href="/school.html">Dravy School</Link>
 								</div>
 							)}
 						</div>
@@ -107,13 +107,13 @@ export default function Navbar() {
 						<Link href="/">Dravy Brands</Link>
 					</div>
 					<div className="mobile-nav-item">
-						<Link href="/creators">Dravy Creators</Link>
+						<Link href="/creators.html">Dravy Creators</Link>
 					</div>
 					<div className="mobile-nav-item">
-						<Link href="/zero-to-one">Zero to One</Link>
+						<Link href="/zero-to-one.html">Zero to One</Link>
 					</div>
 					<div className="mobile-nav-item">
-						<Link href="/school">Dravy School</Link>
+						<Link href="/school.html">Dravy School</Link>
 					</div>
 				</div>
 			</dialog>

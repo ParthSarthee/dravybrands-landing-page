@@ -6,18 +6,18 @@ import Hero2 from "@/components/Hero2";
 
 export default function Home() {
 	return (
-		<>
+		<div className="hero2-gradient">
 			<Hero2 />
 			<Section1 />
 			<AboutUs />
 			<Footer />
-		</>
+		</div>
 	);
 }
 
 function Section1() {
 	return (
-		<div className=" py-32 md:h-screen md:py-0 bg-neutral-900 text-neutral-100 flex flex-col justify-center items-center px-7 gap-20 md:gap-32 md:text-2xl md:font-light md:text-center dc-section-1-gradient">
+		<div className="section2-t-gradient py-32 md:h-screen md:py-0 text-neutral-100 flex flex-col justify-center items-center px-7 gap-20 md:gap-32 md:text-2xl md:font-light md:text-center dc-section-1-gradient">
 			<div className="flex flex-col justify-center items-center md:gap-4 gap-2 w-full">
 				<h1 className="font-bold text-4xl w-full text-left md:text-center md:text-6xl">
 					Wealth Creation
@@ -58,7 +58,7 @@ function AboutUs() {
 			className="flex flex-col-reverse md:flex-row md:min-h-screen w-full md:gap-2 p-6 justify-evenly"
 		>
 			<div className="flex flex-col md:flex-col-reverse w-full md:w-1/2 md:h-auto h-[50vh]">
-				<div className="w-full bg-primary rounded-b-xl md:rounded-xl relative md:h-1/2 h-1/2">
+				<div className="w-full bg-creators rounded-b-xl md:rounded-xl relative md:h-1/2 h-1/2">
 					<img
 						className="absolute w-full p-4 md:p-0 md:top-[-50%] md:left-[16%] md:w-2/3"
 						src="/db_about.svg"
