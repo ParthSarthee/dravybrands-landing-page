@@ -84,7 +84,9 @@ function Section2() {
 				<div className="flex flex-row md:flex-col items-center gap-4">
 					<i className="fa-solid fa-link text-primary text-4xl md:text-6xl"></i>
 
-					<p className="md:max-w-[250px]">Stand out to Senior Executives</p>
+					<p className="md:max-w-[250px]">
+						Build relations and connections that value
+					</p>
 				</div>
 			</div>
 		</div>
