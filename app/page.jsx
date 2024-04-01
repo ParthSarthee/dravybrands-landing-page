@@ -95,16 +95,16 @@ function Section2() {
 
 function BrandSlider() {
 	const logos = [];
-	for (let i = 0; i < 13; i++) {
+	for (let i = 0; i < 12; i++) {
 		let imgSrc = "/brands/i" + i + ".svg";
-		if (i == 12) imgSrc = "/brands/i12.png";
+		if (i == 9) imgSrc = "/brands/i9.png";
 		logos.push(<img src={imgSrc} className="max-w-28 mx-4" key={imgSrc} />);
 	}
 
 	return (
 		<div>
 			<h1 className="md:text-3xl text-lg text-center p-8">
-				Founders from the Top 100+ Companies trust DravyBrands for their growth.
+				Founders from the Top 500+ Companies trust DravyBrands for their growth.
 			</h1>
 			<Marquee speed={200} className="text-white py-8">
 				{logos}
