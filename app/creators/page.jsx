@@ -61,7 +61,7 @@ function AboutUs() {
 				<div className="w-full bg-creators rounded-b-xl md:rounded-xl relative md:h-1/2 h-1/2">
 					<img
 						className="absolute w-full p-4 md:p-0 md:top-[-50%] md:left-[16%] md:w-2/3"
-						src="/db_about.svg"
+						src="/db_about.png"
 					/>
 				</div>
 				<div className="w-full hidden md:flex md:h-1/2"></div>
