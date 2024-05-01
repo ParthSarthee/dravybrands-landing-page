@@ -6,7 +6,8 @@ import ZeroPrice from "./ZeroPrice";
 function Zero() {
 	return (
 		<>
-			<ZeroHero />
+			<p>Coming Soon</p>
+			{/* <ZeroHero />
 			<Hero2 />
 			<About />
 			<SetOf3 />
@@ -19,7 +20,7 @@ function Zero() {
 			<WeeklySchedule />
 			<ToLife />
 
-			<Footer />
+			<Footer /> */}
 		</>
 	);
 }
