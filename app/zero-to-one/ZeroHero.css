@@ -1,0 +1,31 @@
+/* .ZeroHeroDiv {
+	zoom: 62.5%;
+} */
+
+.gran {
+	background: linear-gradient(to right, #ffcfc0, #ff8761, #cfa1ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.slider {
+	transition: all 3s ease;
+}
+
+.card {
+	margin-left: 8px;
+	width: 14rem;
+	height: auto;
+}
+.slider {
+	display: flex;
+	animation: scroller infinite linear 35s;
+}
+@keyframes scroller {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}

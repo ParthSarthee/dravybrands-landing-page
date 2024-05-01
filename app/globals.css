@@ -254,3 +254,7 @@ nav {
 		rgba(23, 23, 23, 0) 35% /* rgba(23, 23, 23, 1) 100% */
 	);
 }
+
+.zero-about-list li {
+	@apply mt-2;
+}
