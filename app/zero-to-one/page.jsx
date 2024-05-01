@@ -7,7 +7,7 @@ import ZeroPrice from "./ZeroPrice";
 function Zero() {
 	return (
 		<>
-			<ZeroHero />
+			{/* <ZeroHero />
 			<Hero2 />
 			<About />
 			<SetOf3 />
@@ -19,8 +19,8 @@ function Zero() {
 
 			<WeeklySchedule />
 			<ToLife />
-			<FAQ />
-
+			<FAQ /> */}
+			<p>Coming Soon!</p>
 			<Footer />
 		</>
 	);
@@ -34,7 +34,9 @@ const Hero2 = () => {
 					<p className="">
 						Become a <br /> startup <br /> founder <br />
 					</p>
-					<p className="text-zero border-t border-b border-zero">in 8 weeks</p>
+					<p className="gradient-animation border-t border-b border-zero">
+						in 8 weeks
+					</p>
 				</div>
 				<div className="text-xs text-center mt-4 p-2 rounded border-zero border bg-neutral-800">
 					<span>
@@ -64,7 +66,7 @@ function About() {
 			<div className="w-10/12 bg-neutral-50 rounded-3xl border-2 border-zero flex flex-col justify-center items-center p-16">
 				<div className=" max-w-[700px] text-center">
 					<h1 className="uppercase text-6xl">
-						About <span className="text-zero">Zero to One</span>
+						About <span className="gradient-animation">Zero to One</span>
 					</h1>
 					<p className="text-xl mt-4">
 						The worlds need creativity and ingenuity. Don't put your dreams on
@@ -141,8 +143,7 @@ function Curriculum() {
 			<div className="w-10/12 bg-neutral-800 rounded-3xl border-2 border-zero flex flex-col justify-center items-center p-16 py-20">
 				<div className=" max-w-[1000px] text-center">
 					<h1 className="uppercase text-6xl text-zero">
-						how is this 8 week journey{" "}
-						<span className="text-neutral-200">structured?</span>
+						how is this 8 week journey structured?
 					</h1>
 					<p className="text-xl mt-6">
 						Each week is crafted to dig deep <br /> into a lever of becoming a
@@ -165,7 +166,7 @@ const WeeklySchedule = () => {
 				<div className="">
 					<div className="text-center">
 						<h2 className="uppercase text-neutral-100 text-4xl sm:text-6xl">
-							Weekly <span className="text-primary">Schedule</span>
+							Weekly <span className="gradient-animation">Schedule</span>
 						</h2>
 						<div className="pt-6 pl-44 pr-44 sm:pl-80 sm:pr-80">
 							<p className="text-neutral-100 text-sm sm:text-xl">
@@ -221,13 +222,13 @@ const ScheduleCard = ({ title, description, timings, last = false }) => {
 	return (
 		<div className={"sm:w-96 sm:mr-6 sm:pr-6" + customClass}>
 			<div className="sm:border-b sm:border-primary sm:border-dashed">
-				<p className="text-primary uppercase text-xl font-semibold pb-3 sm:font-bold">
+				<p className="text-zero uppercase text-xl font-semibold pb-3 sm:font-bold">
 					{title}
 				</p>
 				<p className="text-neutral-100 pb-4 sm:text-xl">{description}</p>
 			</div>
 			<div>
-				<p className="text-primary text-xl font-semibold uppercase sm:pt-3">
+				<p className="text-zero text-xl font-semibold uppercase sm:pt-3">
 					Timings:
 				</p>
 				{timings.map((timing) => (
@@ -272,7 +273,7 @@ function ItsFor() {
 		<div className="flex flex-col justify-center items-center my-32 gap-20 ">
 			<div className=" max-w-[1000px] text-center">
 				<h1 className="uppercase text-6xl ">
-					Who's <span className="text-zero">It For?</span>
+					Who's <span className="gradient-animation">It For?</span>
 				</h1>
 				<p className="text-xl mt-6">
 					Form startup operators and corporate to professionals to B-school
@@ -326,7 +327,8 @@ function SetOf3() {
 			<div className="w-10/12 bg-neutral-800 text-neutral-200 rounded-3xl border-2 border-zero flex flex-col justify-center items-center p-20 gap-28">
 				<div className="flex flex-col gap-8 justify-center items-start text-center">
 					<h1 className="text-6xl uppercase">
-						WHAT SETS <span className="text-zero">Zero-To-One</span> APART?
+						WHAT SETS <span className="gradient-animation">Zero-To-One</span>{" "}
+						APART?
 					</h1>
 					<p className="text-xl">
 						ZeroToOne is the only program in India to empower aspiring
@@ -338,7 +340,7 @@ function SetOf3() {
 					<div className="w-1/2 flex flex-col gap-4">
 						<h1 className="uppercase text-3xl mb-2">
 							Learn By Doing
-							<span className="text-zero"></span>
+							<span className="gradient-animation"></span>
 						</h1>
 						<h2 className="bg-neutral-100 border border-zero text-neutral-800 p-8 rounded-2xl text-lg">
 							Hands-On Experience
@@ -373,7 +375,7 @@ function SetOf3() {
 					<div className="w-1/2 flex flex-col gap-4 text-right">
 						<h1 className="uppercase text-3xl mb-2">
 							GET DIRECT ACCESS TO TOP FOUNDERS, OPERATORS & INVESTORS
-							<span className="text-zero"></span>
+							<span className="gradient-animation"></span>
 						</h1>
 						<h2 className="bg-neutral-100 border border-zero text-neutral-800 p-8 rounded-2xl text-lg">
 							Faculty Of India's Top 1%
@@ -391,7 +393,7 @@ function SetOf3() {
 					<div className="w-1/2 flex flex-col gap-4">
 						<h1 className="uppercase text-3xl mb-2">
 							Become part of an exclusive community
-							<span className="text-zero"></span>
+							<span className="gradient-animation"></span>
 						</h1>
 						<h2 className="bg-neutral-100 border border-zero text-neutral-800 p-8 rounded-2xl text-lg">
 							Ambitious Peers & Alumni Group

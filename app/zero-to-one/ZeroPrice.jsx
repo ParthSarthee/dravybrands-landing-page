@@ -42,7 +42,7 @@ const ZeroPrice = () => {
 				<div className="w-full bg-neutral-100 rounded-3xl h-[40vh] flex flex-col justify-center items-center max-md:h-[45vh] max-sm:h-[35vh]">
 					<h1 className="text-4xl font-semibold text-center leading-tight mb-8 sm:text-5xl md:text-6xl">
 						Application Process
-						<span className="text-zero">
+						<span className="gradient-animation">
 							<br /> & Program Fee
 						</span>
 					</h1>
