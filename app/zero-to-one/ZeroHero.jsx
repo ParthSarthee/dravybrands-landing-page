@@ -11,8 +11,8 @@ export default function D2cxPage() {
 				</div>
 				<div className="flex justify-center items-center">
 					<h1 className="ml-5 text-start text-white font-semibold text-4xl leading-tight md:text-6xl md:text-center">
-						Master <span className="gran">10X D2C Growth</span>
-						<br /> In 12 Weeks
+						Become a <span className="gradient-animation">Startup Founder</span>
+						<br /> In 8 Weeks
 					</h1>
 				</div>
 				<div className="flex flex-col justify-center items-center gap-8">
@@ -26,8 +26,8 @@ export default function D2cxPage() {
 							<p className="ml-2">Applications Closed</p>
 						</div>
 					</div>
-					<button className="bg-btn-back w-full h-12 rounded-xl hover:bg-btn-hover">
-						<a href="#" className="text-white">
+					<button className="bg-zero w-full h-12 rounded-xl hover:bg-btn-hover">
+						<a href="#" className="text-neutral-100 font-bold">
 							JOIN WAITLIST
 						</a>
 					</button>

@@ -1,3 +1,4 @@
+"use client";
 import Footer from "@/components/Footer";
 import React from "react";
 import ZeroHero from "./ZeroHero";
@@ -6,8 +7,7 @@ import ZeroPrice from "./ZeroPrice";
 function Zero() {
 	return (
 		<>
-			<p>Coming Soon</p>
-			{/* <ZeroHero />
+			<ZeroHero />
 			<Hero2 />
 			<About />
 			<SetOf3 />
@@ -19,8 +19,9 @@ function Zero() {
 
 			<WeeklySchedule />
 			<ToLife />
+			<FAQ />
 
-			<Footer /> */}
+			<Footer />
 		</>
 	);
 }
@@ -33,7 +34,7 @@ const Hero2 = () => {
 					<p className="">
 						Become a <br /> startup <br /> founder <br />
 					</p>
-					<p className="text-zero border-t border-b border-zero">in 12 weeks</p>
+					<p className="text-zero border-t border-b border-zero">in 8 weeks</p>
 				</div>
 				<div className="text-xs text-center mt-4 p-2 rounded border-zero border bg-neutral-800">
 					<span>
@@ -300,9 +301,9 @@ function ToLife() {
 			<div className="w-10/12 bg-neutral-800 text-neutral-200 rounded-3xl border-2 border-zero flex flex-col justify-center items-center p-20">
 				<div className="flex flex-row md:flex-nowrap flex-wrap gap-10 justify-between">
 					<div className="w-1/3">
-						<h1 className="uppercase text-6xl">
-							Don't wait! It's time to bring your startup dreams{" "}
-							<span className="text-zero">to life</span>
+						<h1 className="uppercase text-6xl text-neutral-400">
+							Don't wait! It's time to bring your startup dreams <br />
+							<span className=" gradient-animation font-bold">to life.</span>
 						</h1>
 						<button className="uppercase py-2.5 px-12 w-full font-bold bg-zero rounded-lg mt-12 text-neutral-800">
 							Apply Now
@@ -332,7 +333,7 @@ function SetOf3() {
 						entrepreneurs to start their founder's journey.
 					</p>
 				</div>
-				{/* Sec starts */}
+				{/* Sec 1 starts */}
 				<div className="flex flex-row md:flex-nowrap flex-wrap gap-10 justify-evenly w-full">
 					<div className="w-1/2 flex flex-col gap-4">
 						<h1 className="uppercase text-3xl mb-2">
@@ -360,7 +361,7 @@ function SetOf3() {
 						/>
 					</div>
 				</div>
-				{/* Sec ends */}
+				{/* Sec 2 starts */}
 				<div className="flex flex-row md:flex-nowrap flex-wrap gap-10 justify-evenly w-full">
 					<div className="">
 						<img
@@ -371,41 +372,35 @@ function SetOf3() {
 					</div>
 					<div className="w-1/2 flex flex-col gap-4 text-right">
 						<h1 className="uppercase text-3xl mb-2">
-							Learn By Doing
+							GET DIRECT ACCESS TO TOP FOUNDERS, OPERATORS & INVESTORS
 							<span className="text-zero"></span>
 						</h1>
 						<h2 className="bg-neutral-100 border border-zero text-neutral-800 p-8 rounded-2xl text-lg">
-							Hands-On Experience
+							Faculty Of India's Top 1%
 						</h2>
 						<h2 className="bg-neutral-100 border border-zero text-neutral-800 p-8 rounded-2xl text-lg">
-							Industry Project
+							Multiple Networking Events
 						</h2>
 						<h2 className="bg-neutral-100 border border-zero text-neutral-800 p-8 rounded-2xl text-lg">
-							Team Mentorship
-						</h2>
-						<h2 className="bg-neutral-100 border border-zero text-neutral-800 p-8 rounded-2xl text-lg">
-							Upto 10 Lakhs of Funding Opportunities
+							Grand Convocation & Startup Tour
 						</h2>
 					</div>
 				</div>
-				{/* Sec 2 starts */}
+				{/* Sec 3 starts */}
 				<div className="flex flex-row md:flex-nowrap flex-wrap gap-10 justify-evenly w-full">
 					<div className="w-1/2 flex flex-col gap-4">
 						<h1 className="uppercase text-3xl mb-2">
-							Learn By Doing
+							Become part of an exclusive community
 							<span className="text-zero"></span>
 						</h1>
 						<h2 className="bg-neutral-100 border border-zero text-neutral-800 p-8 rounded-2xl text-lg">
-							Hands-On Experience
+							Ambitious Peers & Alumni Group
 						</h2>
 						<h2 className="bg-neutral-100 border border-zero text-neutral-800 p-8 rounded-2xl text-lg">
-							Industry Project
+							Find Your Perfect Co-Founder
 						</h2>
 						<h2 className="bg-neutral-100 border border-zero text-neutral-800 p-8 rounded-2xl text-lg">
-							Team Mentorship
-						</h2>
-						<h2 className="bg-neutral-100 border border-zero text-neutral-800 p-8 rounded-2xl text-lg">
-							Upto 10 Lakhs of Funding Opportunities
+							Unlimited Peer Learning
 						</h2>
 					</div>
 					<div className="">
@@ -417,6 +412,40 @@ function SetOf3() {
 					</div>
 				</div>
 			</div>
+		</div>
+	);
+}
+
+function FAQ() {
+	return (
+		<div className="w-full flex flex-col justify-center items-center my-32 px-8 ">
+			<h1 className="text-6xl mb-16">FAQs</h1>
+			<FAQCard />
+			<FAQCard />
+			<FAQCard />
+			<FAQCard />
+			<FAQCard />
+		</div>
+	);
+}
+
+function FAQCard({ question, answer }) {
+	question = "What is the program about?";
+	answer =
+		"The program is about building a tech-driven startup from scratch. You will learn the essentials of building a startup, from ideation to launch.";
+
+	const [show, setShow] = React.useState(false);
+
+	return (
+		<div className="w-full max-w-screen-lg border-b border-dashed p-4 border-neutral-500 text-neutral-300">
+			<div
+				className="w-full flex justify-between items-center cursor-pointer"
+				onClick={() => setShow(!show)}
+			>
+				<h1 className="text-2xl">{question}</h1>{" "}
+				<span className="text-2xl">{show ? "-" : "+"}</span>
+			</div>
+			<p className={"p-1 mr-4 " + (show && "hidden")}>{answer}</p>
 		</div>
 	);
 }
