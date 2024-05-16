@@ -90,7 +90,7 @@ function AboutUs() {
 					achieve their goals.
 				</p>
 				<a
-					href="https://dravycreators.dravybrands.com/"
+					href="https://tally.so/r/wa69v9"
 					className="bg-creators p-4 text-center text-white text-lg rounded-xl md:max-w-[250px]"
 				>
 					Apply Now

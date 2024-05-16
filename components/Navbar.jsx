@@ -26,7 +26,7 @@ export default function Navbar() {
 			setWeb("dc");
 			setLogo("/dc.svg");
 			setColor("creators");
-			setLink("https://dravycreators.dravybrands.com/");
+			setLink("https://tally.so/r/wa69v9");
 		} else {
 			setWeb("db");
 			setLogo("/logoW.svg");

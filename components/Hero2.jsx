@@ -19,7 +19,7 @@ export default function Hero2() {
 				<p>Join The Exclusive Dravy Creators Community</p>
 			</div>
 			<div className="flex sm:gap-8 gap-5">
-				<Link href="https://dravycreators.dravybrands.com/">
+				<Link href="https://tally.so/r/wa69v9">
 					<button className="sm:py-3 sm:px-8 py-2.5 px-6 rounded uppercase font-bold text-black bg-white hover:bg-creators active:bg-creators">
 						Apply Now
 					</button>

@@ -165,7 +165,7 @@ function Curriculum() {
 const WeeklySchedule = () => {
 	return (
 		<section>
-			<div className="bg-neutral-800 md:py-16 md:my16 my-8 py-8 p-8">
+			<div className="bg-neutral-800 md:py-32 md:my-32 my-12 py-12 p-8">
 				{/* Content */}
 				<div className="">
 					<div className="text-center">
@@ -426,20 +426,35 @@ function FAQ() {
 	return (
 		<div className="w-full flex flex-col justify-center items-center md:my-32 my-16 px-8 ">
 			<h1 className="text-6xl mb-16">FAQs</h1>
-			<FAQCard />
-			<FAQCard />
-			<FAQCard />
-			<FAQCard />
-			<FAQCard />
+			<FAQCard
+				question="What is the 'Zero to One' program?"
+				answer="The 'Zero to One' program is an intensive 8-week startup acceleration cohort designed to empower aspiring entrepreneurs to turn their ideas into market-ready businesses. Through mentorship, resources, and strategic guidance, participants will navigate the journey from concept to launch, gaining the tools and support needed to succeed in the startup landscape."
+			/>
+			<FAQCard
+				question="Who is the 'Zero to One' program for?"
+				answer="The 'Zero to One' program is ideal for individuals with innovative ideas and entrepreneurial aspirations who are ready to take the leap into startup creation. Whether you're a first-time founder, a seasoned entrepreneur, or someone with a passion for problem-solving and innovation, 'Zero to One' provides the guidance and resources to bring your vision to life."
+			/>
+			<FAQCard
+				question="What can participants expect from the 'Zero to One' experience?"
+				answer="Participants in the 'Zero to One' program can expect a dynamic and immersive experience tailored to support their journey from idea to market-ready startup. From expert mentorship and strategic consultancy to interactive workshops and networking opportunities, the program equips participants with the knowledge, skills, and connections needed to succeed."
+			/>
+			<FAQCard
+				question="What sets the 'Zero to One' program apart from other startup accelerators?"
+				answer="'Zero to One' distinguishes itself through its unique combination of hands-on support, personalized guidance, and a focus on rapid growth and tangible results. With a streamlined 8-week timeline and a comprehensive approach to startup development, the program empowers participants to achieve significant milestones and make meaningful progress in a short timeframe."
+			/>
+			<FAQCard
+				question="How does the application process for the 'Zero to One' program work?"
+				answer="The application process for the 'Zero to One' program involves submitting an online application detailing your startup idea, your background and experience, and your goals for participation. Our selection committee will review applications and select a cohort of promising entrepreneurs who demonstrate the potential to benefit from the program."
+			/>
+			<FAQCard
+				question="What support is available to 'Zero to One' participants after the program concludes?"
+				answer="'Zero to One' participants receive ongoing support and resources even after the program concludes. This includes access to a network of mentors, alumni, and industry experts, as well as opportunities for continued learning, networking, and growth. Additionally, participants may have the opportunity to showcase their startups to potential investors and partners through DravyBrands network."
+			/>
 		</div>
 	);
 }
 
 function FAQCard({ question, answer }) {
-	question = "What is the program about?";
-	answer =
-		"The program is about building a tech-driven startup from scratch. You will learn the essentials of building a startup, from ideation to launch.";
-
 	const [show, setShow] = React.useState(false);
 
 	return (
