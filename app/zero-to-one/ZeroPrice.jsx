@@ -52,10 +52,10 @@ const ZeroPrice = () => {
 				</div>
 				<div className="flex pt-2 max-xl:flex-col max-xl:h-auto">
 					<div
-						className="mb-2 xl:w-1/2 bg-neutral-100 mr-1 rounded-3xl flex gap-12 items-center justify-center px-24 max-md:p-5 py-12"
+						className="mb-2 xl:w-1/2 bg-neutral-100 mr-1 rounded-3xl flex md:gap-12 gap-4 items-center justify-center px-24 max-md:p-5 py-12"
 						id="scrollTarget"
 					>
-						<div className="w-3 h-[90%] bg-neutral-300 rounded-full">
+						<div className="w-3 lg:h-[90%] h-[500px] bg-neutral-300 rounded-full">
 							<div className=" bg-zero rounded-full" id="scrollBar"></div>
 						</div>
 						{/* Application Submission Section */}

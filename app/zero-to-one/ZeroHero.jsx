@@ -7,7 +7,7 @@ export default function D2cxPage() {
 			{/* Home Content */}
 			<div className="flex flex-col justify-center items-center gap-16">
 				<div className="hidden justify-center items-center md:flex">
-					<img src="/assets/logo2.png" alt="" className="rounded-4xl" />
+					<img src="/assets/logo2.png" alt="" className="rounded-2xl" />
 				</div>
 				<div className="flex justify-center items-center">
 					<h1 className="ml-5 text-start text-white font-semibold text-4xl leading-tight md:text-6xl md:text-center">
