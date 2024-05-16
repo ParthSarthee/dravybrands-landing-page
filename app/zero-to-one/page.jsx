@@ -17,8 +17,8 @@ function Zero() {
 
 			<ZeroPrice />
 
-			{/* <WeeklySchedule /> */}
-			{/* <ToLife /> */}
+			<WeeklySchedule />
+			<ToLife />
 			<FAQ />
 			<Footer />
 		</>
@@ -165,14 +165,14 @@ function Curriculum() {
 const WeeklySchedule = () => {
 	return (
 		<section>
-			<div className="bg-neutral-800 py-32">
+			<div className="bg-neutral-800 md:py-16 md:my16 my-8 py-8 p-8">
 				{/* Content */}
 				<div className="">
 					<div className="text-center">
 						<h2 className="uppercase text-neutral-100 text-4xl sm:text-6xl">
 							Weekly <span className="gradient-animation">Schedule</span>
 						</h2>
-						<div className="pt-6 pl-44 pr-44 sm:pl-80 sm:pr-80">
+						<div className="pt-6">
 							<p className="text-neutral-100 text-sm sm:text-xl">
 								These are weekly recurring sessions and learning activities
 								scheduled throughout the duration of this course.
@@ -182,7 +182,7 @@ const WeeklySchedule = () => {
 				</div>
 
 				{/* Schedule */}
-				<div className="ml-14 mt-16 mr-14 sm:flex sm:justify-between sm:ml-20 sm:mr-20 sm:mt-24">
+				<div className="sm:flex sm:justify-between">
 					{/* 1 - Core Sessions */}
 					<ScheduleCard
 						title="Core Sessions"
@@ -303,10 +303,10 @@ function ItsFor() {
 function ToLife() {
 	return (
 		<div className="w-full flex justify-center items-center md:my-32 my-16 text-neutral-900">
-			<div className="w-10/12 bg-neutral-800 text-neutral-200 rounded-3xl border-2 border-zero flex flex-col justify-center items-center p-20">
-				<div className="flex flex-row md:flex-nowrap flex-wrap gap-10 justify-between">
-					<div className="w-1/3">
-						<h1 className="uppercase text-6xl text-neutral-400">
+			<div className="sm:w-10/12 m-4 sm:p-16 p-4 sm:m-auto py-8 sm:py-16 bg-neutral-800 text-neutral-200 rounded-3xl border-2 border-zero flex flex-col justify-center items-center">
+				<div className="flex flex-row md:flex-nowrap flex-wrap-reverse gap-10 justify-between">
+					<div className="md:w-1/3 w-full">
+						<h1 className="uppercase sm:text-6xl text-4xl text-neutral-400">
 							Don't wait! It's time to bring your startup dreams <br />
 							<span className=" gradient-animation font-bold">to life.</span>
 						</h1>
@@ -317,7 +317,7 @@ function ToLife() {
 					<img
 						src="/zero/cta.svg"
 						alt="zero1"
-						className="border border-zero rounded-3xl p-4 w-1/2 bg-neutral-100"
+						className="border border-zero rounded-3xl p-4 md:w-1/2 w-full bg-neutral-100"
 					/>
 				</div>
 			</div>

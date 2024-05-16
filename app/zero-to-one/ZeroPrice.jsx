@@ -50,7 +50,7 @@ const ZeroPrice = () => {
 						ZeroToHero is designed to help early-stage startup founders.
 					</p>
 				</div>
-				<div className="flex pt-2 max-xl:flex-col max-xl:h-auto">
+				<div className="flex pt-2 max-lg:flex-col max-lg:h-auto">
 					<div
 						className="mb-2 xl:w-1/2 bg-neutral-100 mr-1 rounded-3xl flex md:gap-12 gap-4 items-center justify-center px-24 max-md:p-5 py-12"
 						id="scrollTarget"
@@ -122,7 +122,7 @@ const ZeroPrice = () => {
 					</div>
 					{/* Apply Now Section */}
 					<div className="mb-2 bg-trii w-1/2 ml-1 rounded-3xl flex justify-center items-center max-xl:w-full max-md:px-10 max-sm:px-1 py-12">
-						<div className="bg-gradient-to-r from-zero  to-creators w-[65%] rounded-lg p-2 max-md:w-full">
+						<div className="bg-gradient-to-r from-zero  to-creators xl:w-[65%] lg:w-[90%] w-[65%] rounded-lg p-2 max-md:w-full">
 							<div className="bg-neutral-900 w-full h-full rounded-lg px-12 py-12 max-sm:px-4">
 								<div className="flex justify-center items-end">
 									<img src="/assets/Group 1000004082.svg" alt="" />
@@ -173,7 +173,7 @@ const ZeroPrice = () => {
 								<div className="box3 w-full h-[27vh] mt-10 rounded-2xl bg-triib3 px-2 pt-4">
 									<div className="flex h-[25%]">
 										<div className="w-[10%]">
-											<img src="/assets/icn-circle.webp" alt="" />
+											<img src="/assets/icn-circle.png" alt="" />
 										</div>
 										<div className="w-[90%]">
 											<p className="text-xs text-neutral-100">
@@ -183,7 +183,7 @@ const ZeroPrice = () => {
 									</div>
 									<div className="flex h-[25%]">
 										<div className="w-[10%]">
-											<img src="/assets/icn-circle.webp" alt="" />
+											<img src="/assets/icn-circle.png" alt="" />
 										</div>
 										<div className="w-[90%]">
 											<p className="text-xs text-neutral-100">
@@ -194,7 +194,7 @@ const ZeroPrice = () => {
 									</div>
 									<div className="flex h-[25%]">
 										<div className="w-[10%]">
-											<img src="/assets/icn-circle.webp" alt="" />
+											<img src="/assets/icn-circle.png" alt="" />
 										</div>
 										<div className="w-[90%]">
 											<p className="text-xs text-neutral-100">
@@ -205,7 +205,7 @@ const ZeroPrice = () => {
 									</div>
 									<div className="flex h-[25%]">
 										<div className="w-[10%]">
-											<img src="/assets/icn-circle.webp" alt="" />
+											<img src="/assets/icn-circle.png" alt="" />
 										</div>
 										<div className="w-[90%]">
 											<p className="text-xs text-neutral-100">
