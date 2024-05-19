@@ -30,6 +30,7 @@ nav {
 
 /* GRADIENT TEXT ANIMATION */
 .gradient-animation {
+	font-weight: bold;
 	background: linear-gradient(
 		135deg,
 		#3f5efb,

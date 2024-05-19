@@ -38,15 +38,16 @@ const Hero2 = () => {
 					</p>
 				</div>
 				<div className="sm:text-xs text-[9px] text-center mt-4 p-2 rounded border-zero border bg-neutral-800">
-					<span>
-						Application Close on 24th April | Cohort Starts on 3rd May
-					</span>
+					<span>Application Closes in August, 2024.</span>
 					{/* <span> Cohort Starts on 3rd May.</span> */}
 				</div>
 				<div className="mt-8 flex justify-evenly gap-2 text-sm">
-					<button className="uppercase w-full py-2.5 text-neutral-900 bg-neutral-50 rounded">
+					<a
+						href="https://rzp.io/l/zero-to-one"
+						className="uppercase w-full py-2.5 text-neutral-900 text-center bg-neutral-50 rounded"
+					>
 						Join Waitlist
-					</button>
+					</a>
 					<button className="uppercase w-full py-2.5 border border-primary rounded">
 						Curriculum
 					</button>
@@ -113,7 +114,8 @@ function Speakers() {
 		<div className="flex flex-col justify-center items-center gap-10 md:my-32 my-16 px-8">
 			<div className="text-center">
 				<h1 className="uppercase sm:text-6xl text-4xl">
-					cohort speakers & mentors
+					cohort <span className="gradient-animation">speakers</span> &{" "}
+					<span className="gradient-animation">mentors</span>
 				</h1>
 				<p className="sm:text-xl text-md mt-4">
 					Learn from real-world, case-based examples brought to life by unicorn
@@ -121,7 +123,7 @@ function Speakers() {
 				</p>
 			</div>
 			<div className="w-full justify-center items-center">
-				<p className="text-3xl sm:text-5xl w-full text-center">Coming Soong</p>
+				<p className="text-3xl sm:text-5xl w-full text-center">Coming Soon</p>
 			</div>
 			{/* <div className="flex flex-wrap gap-20 max-w-[1000px] justify-center items-center">
 				{a.map((i) => (
@@ -146,12 +148,11 @@ function Curriculum() {
 		<div className="w-full flex justify-center items-center md:my-32 my-16 ">
 			<div className="sm:w-10/12 m-4 sm:p-16 p-4 sm:m-auto py-8 sm:py-16 bg-neutral-800 rounded-3xl border-2 border-zero flex flex-col justify-center items-center">
 				<div className=" md:max-w-[1000px] text-center">
-					<h1 className="uppercase md:text-6xl text-4xl text-zero">
+					<h1 className="uppercase md:text-6xl text-4xl text-zero font-bold">
 						how is this 8 week journey structured?
 					</h1>
 					<p className="sm:text-xl text-md mt-6">
-						Each week is crafted to dig deep <br /> into a lever of becoming a
-						Founder.
+						Each week focuses on a critical aspect of becoming a founder.
 					</p>
 					<button className="uppercase py-2.5 px-12 border bg-neutral-200  rounded mt-12 text-neutral-800">
 						Download Full Curriculum
@@ -173,7 +174,7 @@ const WeeklySchedule = () => {
 							Weekly <span className="gradient-animation">Schedule</span>
 						</h2>
 						<div className="pt-6">
-							<p className="text-neutral-100 text-sm sm:text-xl">
+							<p className="text-neutral-100 text-sm sm:text-xl pb-4">
 								These are weekly recurring sessions and learning activities
 								scheduled throughout the duration of this course.
 							</p>
@@ -226,13 +227,11 @@ const ScheduleCard = ({ title, description, timings, last = false }) => {
 	return (
 		<div className={"sm:w-96 sm:mr-6 sm:pr-6" + customClass}>
 			<div className="sm:border-b sm:border-primary sm:border-dashed">
-				<p className="text-zero uppercase text-xl font-semibold pb-3 sm:font-bold">
-					{title}
-				</p>
+				<p className="text-zero uppercase text-xl font-bold">{title}</p>
 				<p className="text-neutral-100 pb-4 sm:text-xl">{description}</p>
 			</div>
 			<div>
-				<p className="text-zero text-xl font-semibold uppercase sm:pt-3">
+				<p className="text-zero text-xl font-bold uppercase sm:pt-3">
 					Timings:
 				</p>
 				{timings.map((timing) => (
@@ -306,13 +305,18 @@ function ToLife() {
 			<div className="sm:w-10/12 m-4 sm:p-16 p-4 sm:m-auto py-8 sm:py-16 bg-neutral-800 text-neutral-200 rounded-3xl border-2 border-zero flex flex-col justify-center items-center">
 				<div className="flex flex-row md:flex-nowrap flex-wrap-reverse gap-10 justify-between">
 					<div className="md:w-1/3 w-full">
-						<h1 className="uppercase sm:text-6xl text-4xl text-neutral-400">
+						<h1 className="uppercase sm:text-6xl text-4xl text-neutral-400 mb-12">
 							Don't wait! It's time to bring your startup dreams <br />
-							<span className=" gradient-animation font-bold">to life.</span>
+							<span className=" gradient-animation font-bold sm:text-7xl text-5xl">
+								to life.
+							</span>
 						</h1>
-						<button className="uppercase py-2.5 px-12 w-full font-bold bg-zero rounded-lg mt-12 text-neutral-800">
+						<a
+							href="https://rzp.io/l/zero-to-one"
+							className="uppercase py-3 px-16 w-full font-bold bg-zero rounded-lg  text-neutral-800"
+						>
 							Apply Now
-						</button>
+						</a>
 					</div>
 					<img
 						src="/zero/cta.svg"
@@ -342,7 +346,7 @@ function SetOf3() {
 				{/* Sec 1 starts */}
 				<div className="flex flex-row lg:flex-nowrap flex-wrap-reverse gap-10 justify-evenly w-full">
 					<div className="lg:w-1/2 w-full flex flex-col gap-4">
-						<h1 className="uppercase sm:text-3xl text-2xl mb-2">
+						<h1 className="uppercase sm:text-3xl text-2xl mb-2 font-bold">
 							Learn By Doing
 							<span className="gradient-animation"></span>
 						</h1>
@@ -377,7 +381,7 @@ function SetOf3() {
 						/>
 					</div>
 					<div className="lg:w-1/2 w-full flex flex-col gap-4">
-						<h1 className="uppercase sm:text-3xl text-2xl mb-2">
+						<h1 className="uppercase sm:text-3xl text-2xl mb-2 font-bold">
 							GET DIRECT ACCESS TO TOP FOUNDERS, OPERATORS & INVESTORS
 							<span className="gradient-animation"></span>
 						</h1>
@@ -395,7 +399,7 @@ function SetOf3() {
 				{/* Sec 3 starts */}
 				<div className="flex flex-row lg:flex-nowrap flex-wrap-reverse gap-10 justify-evenly w-full">
 					<div className="lg:w-1/2 w-full flex flex-col gap-4">
-						<h1 className="uppercase sm:text-3xl text-2xl mb-2">
+						<h1 className="uppercase sm:text-3xl text-2xl mb-2 font-bold">
 							Become part of an exclusive community
 							<span className="gradient-animation"></span>
 						</h1>

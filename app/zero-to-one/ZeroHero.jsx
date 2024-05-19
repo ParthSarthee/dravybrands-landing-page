@@ -6,7 +6,7 @@ export default function D2cxPage() {
 		<div className="my-16 ZeroHeroDiv">
 			{/* Home Content */}
 			<div className="flex flex-col justify-center items-center gap-16">
-				<div className="hidden justify-center items-center md:flex">
+				<div className="justify-center items-center flex px-10 md:px-0 ">
 					<img src="/assets/logo2.png" alt="" className="rounded-2xl" />
 				</div>
 				<div className="flex justify-center items-center">
@@ -23,12 +23,15 @@ export default function D2cxPage() {
 						</div>
 						<div className="flex items-center justify-center min-[670px]:justify-start">
 							<img src="/assets/assest2.svg" alt="" />
-							<p className="ml-2">Applications Closed</p>
+							<p className="ml-2">Applications Open</p>
 						</div>
 					</div>
 					<button className="bg-zero w-full h-12 rounded-xl hover:bg-btn-hover">
-						<a href="#" className="text-neutral-100 font-bold">
-							JOIN WAITLIST
+						<a
+							href="https://rzp.io/l/zero-to-one"
+							className="text-neutral-100 font-bold"
+						>
+							APPLY NOW
 						</a>
 					</button>
 				</div>

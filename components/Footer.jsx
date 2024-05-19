@@ -84,13 +84,13 @@ export default function Footer() {
 
 				<div className="flex flex-col gap-4">
 					<h1 className="text-3xl text-neutral-500">Resources</h1>
-					<a href="https://dravybrands.com/pp.pdf" target="_blank">
+					<a href="/pp.pdf" target="_blank">
 						Privacy Policy
 					</a>
-					<a href="https://dravybrands.com/refund.pdf" target="_blank">
+					<a href="/refund.pdf" target="_blank">
 						Refund Policy
 					</a>
-					<a href="https://dravybrands.com/tc.pdf" target="_blank">
+					<a href="/tc.pdf" target="_blank">
 						Terms & Conditions
 					</a>
 				</div>

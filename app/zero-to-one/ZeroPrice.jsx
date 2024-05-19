@@ -40,14 +40,14 @@ const ZeroPrice = () => {
 		<div className="bg-neutral-900 text-neutral-900 w-full p-5">
 			<div className="w-full bg-gray-200 rounded-3xl p-2">
 				<div className="w-full bg-neutral-100 rounded-3xl h-[40vh] flex flex-col justify-center items-center max-md:h-[45vh] max-sm:h-[35vh]">
-					<h1 className="text-4xl font-semibold text-center leading-tight mb-8 sm:text-5xl md:text-6xl">
+					<h1 className="text-4xl text-center leading-tight mb-8 sm:text-5xl md:text-6xl font-bold">
 						Application Process
 						<span className="gradient-animation">
 							<br /> & Program Fee
 						</span>
 					</h1>
 					<p className="w-2/4 text-center max-md:w-4/5 max-sm:text-sm">
-						ZeroToHero is designed to help early-stage startup founders.
+						Zero To One is designed to help early-stage startup founders.
 					</p>
 				</div>
 				<div className="flex pt-2 max-lg:flex-col max-lg:h-auto">
@@ -84,7 +84,7 @@ const ZeroPrice = () => {
 									<div className="bg-zero h-[60%] rounded-md text-sm flex flex-col justify-evenly px-5">
 										<h4 className="font-bold max-sm:text-xs">Note*</h4>
 										<p className="max-sm:text-xs">
-											Application Close on 24th April, 2024
+											Application Close on 24th August, 2024
 										</p>
 									</div>
 								</div>
@@ -99,7 +99,7 @@ const ZeroPrice = () => {
 							>
 								<h1 className="text-2xl font-medium">Application Review</h1>
 								<p className="text-sm max-sm:text-xs">
-									After a review by the ZeroToHero curation team, shortlisted
+									After a review by the ZeroToOne curation team, shortlisted
 									candidates will be invited for an interview call to understand
 									their ambitions and fit for the program.
 								</p>
@@ -114,8 +114,8 @@ const ZeroPrice = () => {
 							>
 								<h1 className="text-2xl font-medium">Enrolment Fee</h1>
 								<p className="text-sm max-sm:text-xs">
-									If you're offered a spot, complete your ZeroToHero enrolment
-									by paying the remaining fee of ₹14,999 + 18% GST.
+									If you're offered a spot, complete your ZeroToOne enrolment by
+									paying the remaining fee of ₹14,999 (Including GST).
 								</p>
 							</div>
 						</div>
@@ -128,15 +128,14 @@ const ZeroPrice = () => {
 									<img src="/assets/Group 1000004082.svg" alt="" />
 								</div>
 								<div className="h-40 rounded-2xl bg-neutral-800 p-3 flex flex-col justify-evenly items-center text-neutral-100">
-									<button className="h-1/2 w-full rounded-xl bg-zero">
-										<a href="#" className="text-sm">
-											APPLY NOW{" "}
-											<span className="font-bold">@ RS. 699 ONLY</span>
-										</a>
-									</button>
+									<a
+										href="https://rzp.io/l/zero-to-one"
+										className="h-1/2 w-full rounded-xl bg-zero flex justify-center items-center"
+									>
+										APPLY NOW <span className="font-bold">@ RS. 699 ONLY</span>
+									</a>
 									<p className="text-center text-xs h-1/2 flex items-center">
-										* Application fee is fully refundable if you’re not selected
-										for the Program.
+										* Application fee will be non refundable.
 									</p>
 								</div>
 								<p className="text-neutral-100 text-xs text-center my-5">
@@ -149,7 +148,7 @@ const ZeroPrice = () => {
 												Regular Program Fee
 											</p>
 											<p className="text-neutral-100 line-through text-xs">
-												INR 14,999
+												INR 17,999
 											</p>
 										</div>
 										<div className="h-3/5 flex py-3 justify-between">
@@ -157,17 +156,17 @@ const ZeroPrice = () => {
 												Early Bird Cohort Fee
 											</p>
 											<a
-												href="#"
+												href="https://rzp.io/l/zero-to-one"
 												className="text-xs text-neutral-100 px-2 py-1 bg-zero rounded-full flex justify-center items-center"
 											>
-												Save INR 25,000
+												Save INR 3,000
 											</a>
 										</div>
 									</div>
 									<div className="h-1/3 text-neutral-100 flex justify-center mt-1">
 										<p className="text-xs">INR</p>
 										<h1 className="text-3xl px-5">14,999</h1>
-										<p className="text-xs">+GST</p>
+										{/* <p className="text-xs">(Including GST)</p> */}
 									</div>
 								</div>
 								<div className="box3 w-full h-[27vh] mt-10 rounded-2xl bg-triib3 px-2 pt-4">

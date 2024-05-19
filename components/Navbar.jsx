@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
+// ZeroToOne => https://rzp.io/l/zero-to-one
+
 export default function Navbar() {
 	const [showNav, setShowNav] = useState(false);
 
@@ -20,6 +22,7 @@ export default function Navbar() {
 		setShowNav(false);
 		if (pathname.includes("zero-to-one")) {
 			setWeb("zero");
+			setLink("https://rzp.io/l/zero-to-one");
 		} else if (pathname.includes("school")) {
 			setWeb("ds");
 		} else if (pathname.includes("creators")) {

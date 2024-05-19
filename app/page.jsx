@@ -11,6 +11,7 @@ export default function Home() {
 			{/* <Section1 /> */}
 			<BrandSlider />
 			<Section2 />
+			<AnotherSlider />
 			<AboutUs />
 			<TestimonialSlider />
 			<Footer />
@@ -94,11 +95,13 @@ function Section2() {
 }
 
 function BrandSlider() {
-	const logos = [];
-	for (let i = 0; i < 12; i++) {
-		let imgSrc = "/brands/i" + i + ".svg";
-		if (i == 9) imgSrc = "/brands/i9.png";
-		logos.push(<img src={imgSrc} className="max-w-28 mx-4" key={imgSrc} />);
+	const logos1 = [];
+	const logos2 = [];
+	for (let i = 1; i <= 15; i++) {
+		let imgSrc = "/brands1/i" + i + ".png";
+		let imgSrc2 = "/brands2/i" + i + ".png";
+		logos1.push(<img src={imgSrc} className="max-h-10 mx-6" key={imgSrc} />);
+		logos2.push(<img src={imgSrc2} className="max-h-10 mx-6" key={imgSrc2} />);
 	}
 
 	return (
@@ -107,7 +110,10 @@ function BrandSlider() {
 				Founders from the Top 500+ Companies trust DravyBrands for their growth.
 			</h1>
 			<Marquee speed={200} className="text-white py-8">
-				{logos}
+				{logos1}
+			</Marquee>
+			<Marquee speed={200} className="text-white py-8">
+				{logos2}
 			</Marquee>
 		</div>
 	);
@@ -176,6 +182,23 @@ function TestimonialSlider() {
 				What our community has to say
 			</h1>
 			<Marquee className="text-white py-20">{Reviews}</Marquee>
+		</div>
+	);
+}
+
+function AnotherSlider() {
+	const logos1 = [];
+	for (let i = 1; i <= 9; i++) {
+		let imgSrc = "/slider/i" + i + ".png";
+		logos1.push(<img src={imgSrc} className="max-h-10 mx-6" key={imgSrc} />);
+	}
+
+	return (
+		<div className="pt-10 pb-32">
+			<h1 className="md:text-3xl text-lg text-center p-8">Our Partners</h1>
+			<Marquee speed={200} className="text-white py-8">
+				{logos1}
+			</Marquee>
 		</div>
 	);
 }

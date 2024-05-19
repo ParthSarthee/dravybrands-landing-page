@@ -19,7 +19,7 @@
 }
 .slider {
 	display: flex;
-	animation: scroller infinite linear 35s;
+	animation: scroller infinite linear 15s;
 }
 @keyframes scroller {
 	0% {
