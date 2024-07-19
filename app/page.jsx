@@ -100,8 +100,8 @@ function BrandSlider() {
 	for (let i = 1; i <= 15; i++) {
 		let imgSrc = "/brands1/i" + i + ".png";
 		let imgSrc2 = "/brands2/i" + i + ".png";
-		logos1.push(<img src={imgSrc} className="max-h-10 mx-6" key={imgSrc} />);
-		logos2.push(<img src={imgSrc2} className="max-h-10 mx-6" key={imgSrc2} />);
+		logos1.push(<img src={imgSrc} className="h-40 mx-6" key={imgSrc} />);
+		logos2.push(<img src={imgSrc2} className="h-40 mx-6" key={imgSrc2} />);
 	}
 
 	return (
@@ -112,7 +112,7 @@ function BrandSlider() {
 			<Marquee speed={200} className="text-white py-8">
 				{logos1}
 			</Marquee>
-			<Marquee speed={200} className="text-white py-8">
+			<Marquee direction="right" speed={200} className="text-white py-8">
 				{logos2}
 			</Marquee>
 		</div>

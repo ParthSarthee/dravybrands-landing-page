@@ -12,7 +12,7 @@ export default function D2cxPage() {
 				<div className="flex justify-center items-center">
 					<h1 className="ml-5 text-start text-white font-semibold text-4xl leading-tight md:text-6xl md:text-center">
 						Become a <span className="gradient-animation">Startup Founder</span>
-						<br /> In 8 Weeks
+						<br /> In 12 Weeks
 					</h1>
 				</div>
 				<div className="flex flex-col justify-center items-center gap-8">
@@ -26,14 +26,12 @@ export default function D2cxPage() {
 							<p className="ml-2">Applications Open</p>
 						</div>
 					</div>
-					<button className="bg-zero w-full h-12 rounded-xl hover:bg-btn-hover">
-						<a
-							href="https://rzp.io/l/zero-to-one"
-							className="text-neutral-100 font-bold"
-						>
-							APPLY NOW
-						</a>
-					</button>
+					<a
+						href="https://tally.so/r/nrl4bR"
+						className="bg-zero w-full h-12 rounded-xl hover:bg-btn-hover flex justify-center items-center font-bold text-white"
+					>
+						APPLY NOW
+					</a>
 				</div>
 			</div>
 
