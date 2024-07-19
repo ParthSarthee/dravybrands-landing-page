@@ -10,6 +10,9 @@ export default function Footer() {
   const [logo, setLogo] = useState("/logoW.svg");
   const [color, setColor] = useState("primary");
   const [link, setLink] = useState("https://nas.io/db-founders-community");
+  const [instagram, setInstagram] = useState(
+    "https://instagram.com/dravybrands?"
+  );
 
   useEffect(() => {
     if (pathname.includes("zero-to-one")) {
@@ -19,6 +22,9 @@ export default function Footer() {
       setLogo("/school.svg");
       setColor("school");
       setLink("https://tally.so/r/mO0jE7");
+      setInstagram(
+        "https://www.instagram.com/dravyschool?igsh=dHRweWp1MWJrdHk1&utm_source=website"
+      );
     } else if (pathname.includes("creators")) {
       setWeb("dc");
       setLogo("/dc.svg");
@@ -100,7 +106,7 @@ export default function Footer() {
 
         <div className="flex flex-col gap-4">
           <h1 className="text-3xl text-neutral-500">Social</h1>
-          <a href="https://instagram.com/dravybrands?" target="_blank">
+          <a href={instagram} target="_blank">
             <i className="bx bxl-instagram-alt text-3xl"></i>
           </a>
           <a href="https://www.linkedin.com/company/dravy/" target="_blank">

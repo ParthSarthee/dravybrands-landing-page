@@ -50,13 +50,13 @@ const SchoolHero = () => {
 
         <div className="grid grid-cols-2 gap-3">
           <SchoolHeroCard
-            className="bg-gradient-to-br from-green-400 via-emerald-500 via-teal-400 to-cyan-500 text-neutral-800"
+            className="bg-gradient-to-br from-green-400 via-emerald-500 to-cyan-500 text-neutral-800"
             icon="fa-regular fa-calendar-days"
             title="Date"
             description="25 August (New Delhi)"
           ></SchoolHeroCard>
           <SchoolHeroCard
-            className="bg-gradient-to-br from-green-700 via-emerald-400 to-teal-500 text-neutral-800"
+            className="bg-gradient-to-br to-green-700 via-emerald-400 from-teal-500 text-neutral-800"
             icon="fa-solid fa-user-group"
             title="Inner Circle"
             description="25 Selected Folks"
@@ -245,12 +245,26 @@ function School() {
         <p className="mb-5 text-base">
           Become a Startup Founder In 8 Weeks Apply now for Early Access
         </p>
-        <button className="w-34 py-3 px-6 rounded-lg uppercase font-semibold text-black bg-school">
+        <a
+          href="https://tally.so/r/wg4k9K"
+          className="w-34 py-3 px-6 rounded-lg uppercase font-semibold text-black bg-school"
+        >
           Apply Now
-        </button>
+        </a>
       </div>
 
       <ZeroPrice></ZeroPrice>
+
+      <p className="text-center mt-10 text-lg">
+        For more information, Please Contact us at [
+        <a
+          href="mailto:contactus@dravybrands.com"
+          className="text-blue-500 underline"
+        >
+          contactus@dravybrands.com
+        </a>
+        ].
+      </p>
       <Footer></Footer>
     </>
   );

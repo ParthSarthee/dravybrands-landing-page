@@ -53,26 +53,23 @@ export default function Navbar() {
               </Link>
             </div>
             <div className="nav-item-container md:flex items-center hidden">
-              {web != "db" && (
-                <div className="nav-item">
-                  <Link href="/">Dravy Brands</Link>
-                </div>
-              )}
-              {web != "dc" && (
-                <div className="nav-item">
-                  <Link href="/creators.html">Dravy Creators</Link>
-                </div>
-              )}
-              {web != "zero" && (
+              <div className="nav-item">
+                <Link href="/">Dravy Brands</Link>
+              </div>
+
+              <div className="nav-item">
+                <Link href="/creators.html">Dravy Creators</Link>
+              </div>
+
+              {/* {web != "zero" && (
                 <div className="nav-item">
                   <Link href="/zero-to-one.html">Zero to One</Link>
                 </div>
-              )}
-              {web != "ds" && (
-                <div className="nav-item">
-                  <Link href="/school">Dravy School</Link>
-                </div>
-              )}
+              )} */}
+
+              <div className="nav-item">
+                <Link href="/school.html">Dravy School</Link>
+              </div>
             </div>
             <div className="nav-button invisible md:visible flex items-center justify-end bg-">
               <a href={link} target="_blank" rel="noreferrer">
@@ -115,11 +112,11 @@ export default function Navbar() {
           <div className="mobile-nav-item">
             <Link href="/creators.html">Dravy Creators</Link>
           </div>
-          <div className="mobile-nav-item">
+          {/* <div className="mobile-nav-item">
             <Link href="/zero-to-one.html">Zero to One</Link>
-          </div>
+          </div> */}
           <div className="mobile-nav-item">
-            <Link href="/school">Dravy School</Link>
+            <Link href="/school.html">Dravy School</Link>
           </div>
         </div>
       </dialog>

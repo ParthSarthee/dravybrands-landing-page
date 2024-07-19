@@ -216,7 +216,7 @@ const ZeroPrice = () => {
                       <p className="text-triibbt2 text-xs">
                         {color === "zero"
                           ? "Early Bird Cohort Fee"
-                          : "4 Days Accommodation"}
+                          : "4 Days Startup Bootcamp"}
                       </p>
                       <a
                         href="https://rzp.io/l/zero-to-one"
