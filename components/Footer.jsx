@@ -87,7 +87,7 @@ export default function Footer() {
           <h1 className="text-3xl text-neutral-500">Overview</h1>
           <Link href="/">Dravy Brands</Link>
           <Link href="/creators.html">Dravy Creators</Link>
-          <Link href="/zero-to-one.html">Zero To One</Link>
+          {/* <Link href="/zero-to-one.html">Zero To One</Link> */}
           <Link href="/school.html">Dravy School</Link>
         </div>
 
