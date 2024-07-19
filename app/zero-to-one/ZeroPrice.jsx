@@ -58,7 +58,10 @@ const ZeroPrice = () => {
   }, [pathname]);
 
   return (
-    <div className="bg-neutral-900 text-neutral-900 w-full p-5">
+    <div
+      className="bg-neutral-900 text-neutral-900 w-full p-5"
+      id="applicationprocess"
+    >
       <div className="w-full bg-gray-200 rounded-3xl p-2">
         <div className="w-full bg-neutral-100 rounded-3xl h-[40vh] flex flex-col justify-center items-center max-md:h-[45vh] max-sm:h-[35vh]">
           <h1 className="text-4xl text-center leading-tight mb-8 sm:text-5xl md:text-6xl font-bold">

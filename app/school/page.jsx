@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "@/components/Footer";
 import ZeroPrice from "../zero-to-one/ZeroPrice";
+import Link from "next/link";
 
 const SchoolHeroCard = ({ icon, title, description, className }) => {
   return (
@@ -53,7 +54,7 @@ const SchoolHero = () => {
             className="bg-gradient-to-br from-green-400 via-emerald-500 to-cyan-500 text-neutral-800"
             icon="fa-regular fa-calendar-days"
             title="Date"
-            description="25 August (New Delhi)"
+            description="22nd August, 25th August, 2024"
           ></SchoolHeroCard>
           <SchoolHeroCard
             className="bg-gradient-to-br to-green-700 via-emerald-400 from-teal-500 text-neutral-800"
@@ -93,13 +94,13 @@ function Curriculum() {
             invaluable networking opportunities.
           </p>
           <a
-            href="https://tally.so/r/wg4k9K"
+            href="https://tally.so/r/mO0jE7"
             className="inline-block uppercase py-2.5 px-12 border bg-neutral-200  rounded mt-12 text-neutral-800"
           >
             Apply Now
           </a>
           <a
-            href="https://tally.so/r/wg4k9K"
+            href="#"
             className="ml-2 inline-block uppercase py-2.5 px-6 border bg-neutral-200  rounded mt-12 text-neutral-800"
           >
             Download Curriculum
@@ -127,9 +128,12 @@ function TimelineCard({ icon, title, body }) {
         {body}
       </p>
       <div className="mt-6">
-        <button className="px-4 py-2 bg-blue-500 text-white rounded-full text-sm font-semibold transition duration-300 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50">
+        <Link
+          href="#applicationprocess"
+          className="px-4 py-2 bg-blue-500 text-white rounded-full text-sm font-semibold transition duration-300 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
+        >
           Learn More
-        </button>
+        </Link>
       </div>
     </div>
   );
@@ -177,13 +181,10 @@ function School() {
 
         {/* Exciting highlights */}
         <div className="text-center mt-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-3">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Exciting
             <span className="gradient-animation-green"> Highlights</span>
           </h2>
-          <p className="text-gray-100 text-xl font-light mb-5">
-            Join India's first startup school
-          </p>
 
           <div className="mt-10 relative">
             <EventCard
@@ -255,7 +256,7 @@ function School() {
 
       <ZeroPrice></ZeroPrice>
 
-      <p className="text-center mt-10 text-lg">
+      <p className="text-center mt-10 text-2xl">
         For more information, Please Contact us at [
         <a
           href="mailto:contactus@dravybrands.com"

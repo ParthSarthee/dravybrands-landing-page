@@ -93,13 +93,22 @@ export default function Footer() {
 
         <div className="flex flex-col gap-4">
           <h1 className="text-3xl text-neutral-500">Resources</h1>
-          <a href="/pp.pdf" target="_blank">
+          <a
+            href={color === "school" ? "/school/pp.pdf" : "/pp.pdf"}
+            target="_blank"
+          >
             Privacy Policy
           </a>
-          <a href="/refund.pdf" target="_blank">
+          <a
+            href={color === "school" ? "/school/refund.pdf" : "/refund.pdf"}
+            target="_blank"
+          >
             Refund Policy
           </a>
-          <a href="/tc.pdf" target="_blank">
+          <a
+            href={color === "school" ? "/school/tc.pdf" : "/tc.pdf"}
+            target="_blank"
+          >
             Terms & Conditions
           </a>
         </div>
