@@ -151,10 +151,10 @@ function JoinUs() {
 				{data.map((d, i) => (
 					<div
 						key={i}
-						className="flex flex-col gap-2 p-10  bg-neutral-100 text-neutral-800 rounded-2xl lg:gap-10 sm:gap-4"
+						className="flex flex-col gap-2 p-10 bg-neutral-100 text-neutral-800 rounded-2xl lg:gap-10 sm:gap-4"
 					>
-						<h1 className="text-3xl font-bold  md:text-4xl">{d.title}</h1>
-						<p className="text-lg  md:text-xl">{d.description}</p>
+						<h1 className="text-3xl font-bold md:text-4xl">{d.title}</h1>
+						<p className="text-lg md:text-xl">{d.description}</p>
 					</div>
 				))}
 			</div>
@@ -305,6 +305,28 @@ const ScheduleCard = ({ title, description, timings, last = false }) => {
 };
 
 export function ItsFor() {
+	const data = [
+		{
+			title: "Startup Operators",
+			description:
+				"Who want to start thinking & executing like a startup founder",
+		},
+		{
+			title: "Corporate Professional",
+			description:
+				"Seeking exposure to early stage methods before taking the plunge",
+		},
+		{
+			title: "Solopreneurs",
+			description:
+				"Wanting to transform their freelance practice into a startup",
+		},
+		{
+			title: "Studentpreneurs",
+			description: "Students who want to start something of their own",
+		},
+	];
+
 	const pathname = usePathname();
 	const [color, setColor] = useState("zero");
 
@@ -324,10 +346,10 @@ export function ItsFor() {
 				{data.map((d, i) => (
 					<div
 						key={i}
-						className="flex flex-col gap-2 p-10  bg-neutral-100 text-neutral-800 rounded-2xl lg:gap-10 sm:gap-4"
+						className="flex flex-col gap-2 p-10 bg-neutral-100 text-neutral-800 rounded-2xl lg:gap-10 sm:gap-4"
 					>
-						<h1 className="text-3xl font-bold  md:text-4xl">{d.title}</h1>
-						<p className="text-lg  md:text-xl">{d.description}</p>
+						<h1 className="text-3xl font-bold md:text-4xl">{d.title}</h1>
+						<p className="text-lg md:text-xl">{d.description}</p>
 					</div>
 				))}
 			</div>
@@ -343,7 +365,7 @@ function ToLife() {
 					<div className="w-full md:w-1/3">
 						<h1 className="mb-12 text-4xl uppercase sm:text-6xl text-neutral-400">
 							Don't wait! It's time to bring your startup dreams <br />
-							<span className="text-5xl font-bold  gradient-animation sm:text-7xl">
+							<span className="text-5xl font-bold gradient-animation sm:text-7xl">
 								to life.
 							</span>
 						</h1>
