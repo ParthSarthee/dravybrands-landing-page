@@ -77,7 +77,9 @@ const ZeroPrice = () => {
             </span>
           </h1>
           <p className="w-2/4 text-center max-md:w-4/5 max-sm:text-sm">
-            {title} is designed to help early-stage startup founders.
+            {color === "school"
+              ? "Join the Ultimate 4 days Residential Startup Bootcamp Experience with DravySchool!"
+              : title + " is designed to help early-stage startup founders."}
           </p>
         </div>
         <div className="flex pt-2 max-lg:flex-col max-lg:h-auto">

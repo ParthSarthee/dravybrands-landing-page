@@ -23,9 +23,8 @@ const SchoolHero = () => {
               Innovate. Elevate. Succeed.
             </h1>
             <p className="text-2xl lg:text-3xl text-neutral-800 font-semibold lg:leading-9">
-              Join the Ultimate 4 Days Startup Bootcamp Experience with
-              DravySchool! Dive into the Startup Ecosystem and Unlock Your
-              Entrepreneurial Potential.
+              Join the Ultimate 4 days Residential Startup Bootcamp Experience
+              with DravySchool!
             </p>
 
             <a
@@ -90,8 +89,8 @@ function Curriculum() {
           <p className="sm:text-xl text-md mt-6">
             Embark on a transformative journey designed for aspiring
             entrepreneurs. Our intensive 4-day bootcamp in Delhi NCR offers a
-            unique blend of practical experience, expert mentorship, and
-            invaluable networking opportunities.
+            unique blend of practical experience, living with 25 builders who
+            will be complete strangers and invaluable networking opportunities.
           </p>
           <a
             href="https://tally.so/r/mO0jE7"
