@@ -226,7 +226,7 @@ const ZeroPrice = () => {
                       <a
                         href="https://rzp.io/l/zero-to-one"
                         className={
-                          "text-xs text-neutral-100 px-2 py-1  rounded-full flex justify-center items-center bg-" +
+                          "text-center text-xs text-neutral-100 px-2 py-1  rounded-full flex justify-center items-center bg-" +
                           color +
                           " " +
                           (color === "zero"
