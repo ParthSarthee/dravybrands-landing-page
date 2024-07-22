@@ -53,7 +53,7 @@ const SchoolHero = () => {
             className="bg-gradient-to-br from-green-400 via-emerald-500 to-cyan-500 text-neutral-800"
             icon="fa-regular fa-calendar-days"
             title="Date"
-            description="22nd August, 25th August, 2024"
+            description="22nd August - 25th August, 2024"
           ></SchoolHeroCard>
           <SchoolHeroCard
             className="bg-gradient-to-br to-green-700 via-emerald-400 from-teal-500 text-neutral-800"
