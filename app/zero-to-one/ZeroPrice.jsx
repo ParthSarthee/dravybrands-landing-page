@@ -204,9 +204,11 @@ const ZeroPrice = () => {
                     * Application fee will be non refundable.
                   </p>
                 </div>
+
                 <p className="text-neutral-100 text-xs text-center my-5">
-                  *EMI Option Available
+                  {color === "school" ? "" : "*EMI Option Available"}
                 </p>
+
                 <div className="h-40 border border-triib2 rounded-xl p-1">
                   <div className="bg-triibb2 rounded-lg h-2/3 px-5">
                     <div className="h-2/5 flex justify-between items-center">

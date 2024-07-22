@@ -17,7 +17,7 @@ const SchoolHero = () => {
   return (
     <div className="w-full school-hero pt-10">
       <div className="container mx-auto p-2 flex flex-col justify-center">
-        <div className="min-h-[calc(100vh-200px)] bg-school w-full rounded-xl mb-10 grid lg:grid-cols-2 p-10 xl:min-h-[auto]">
+        <div className="min-h-[calc(100vh-200px)] bg-school w-full rounded-xl mb-10 gap-3 grid lg:grid-cols-2 p-10 xl:min-h-[auto]">
           <div className="flex flex-col lg:pt-40">
             <h1 className="text-2xl sm:text-4xl lg:text-5xl uppercase font-sans font-bold bg-[#2A4858] text-white will-change-transform -rotate-2 p-3 lg:absolute lg:top-[200px] mb-5 lg:mb-0">
               Innovate. Elevate. Succeed.
@@ -40,9 +40,9 @@ const SchoolHero = () => {
           <div className="mt-4 lg:mt-0">
             <div className="bg-white p-3 rounded-lg h-full flex items-center">
               <img
-                src="/school/hero.gif"
+                src="/zero/one.svg"
                 alt="School"
-                className="object-cover"
+                className="object-cover floating"
               />
             </div>
           </div>
@@ -99,7 +99,7 @@ function Curriculum() {
             Apply Now
           </a>
           <a
-            href="#"
+            href="/curriculum.pdf"
             className="ml-2 inline-block uppercase py-2.5 px-6 border bg-neutral-200  rounded mt-12 text-neutral-800"
           >
             Download Curriculum
