@@ -38,9 +38,9 @@ const SchoolHero = () => {
             </p>
           </div>
           <div className="mt-4 lg:mt-0">
-            <div className="bg-white p-3 rounded-lg h-full flex items-center">
+            <div className="bg-transparent p-3 rounded-lg h-full flex items-center">
               <img
-                src="/zero/one.svg"
+                src="/school/memoji.png"
                 alt="School"
                 className="object-cover floating"
               />
